@@ -12,11 +12,17 @@ const htmlPages = [
   createPage('./src/pages/articles.html', './pages/articles.html'),
   createPage(
     './src/pages/articles/article1.html',
-    './pages/articles/article1.html',
+    './pages/articles/article1.html'
+  ),
+  createPage(
     './src/pages/articles/article2.html',
-    './pages/articles/article2.html',
+    './pages/articles/article2.html'
+  ),
+  createPage(
     './src/pages/articles/article3.html',
-    './pages/articles/article3.html',
+    './pages/articles/article3.html'
+  ),
+  createPage(
     './src/pages/articles/article4.html',
     './pages/articles/article4.html'
   ),
