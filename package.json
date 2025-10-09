@@ -1,7 +1,7 @@
 {
-  "name": "b24ds09",
+  "name": "Tarelka",
   "version": "1.0.0",
-  "author": "Anna Komkova",
+  "author": "Ivan Chastov",
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --open --config config/webpack.dev.js",
