@@ -1,15 +1,112 @@
+* {
+  box-sizing: border-box;
+}
 body {
-  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
 }
-h1 {
-  font-weight: 700;
+html {
+  font-size: calc(1vw / 19.2);
 }
-h2 {
-  font-weight: 500;
+#index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-h3 {
+#indexWrapper {
+  margin-top: 249rem;
+  width: 1455rem;
+  height: 450rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.indexContainerInfo {
+  width: 1455rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 32rem;
+}
+.indexContainerInfoText {
+  gap: 8rem;
+}
+
+#index h1 {
   font-weight: 400;
+  font-style: normal;
+  font-size: 96rem;
+  color: #100f15;
+  text-align: center;
+  line-height: 106rem;
 }
-h4 {
+#index h2 {
   font-weight: 300;
+  font-style: normal;
+  font-size: 24rem;
+  color: #100f15;
+  text-align: center;
+  line-height: 28.8rem;
 }
+
+#index p {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20rem;
+  text-align: center;
+  line-height: 28.8rem;
+}
+#my-form-status {
+  color: #76b976;
+}
+
+.Tag p {
+  color: #f48e28;
+}
+.Tag {
+  background-color: #ffeedc;
+  color: #f48e28;
+  border-radius: 30rem;
+  height: 58rem;
+  padding-top: 16rem;
+  padding-left: 24rem;
+  padding-right: 24rem;
+}
+.indexContainerInfoTags {
+  width: 696rem;
+  height: 58rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 599rem;
+  gap: 10rem;
+}
+
+#index form input {
+  height: 60rem;
+  border-radius: 30rem;
+  background-color: #fefefe;
+  border: solid 1rem #dadae2;
+  padding: 0 20rem;
+}
+#my-form-button {
+  height: 60rem;
+  border-radius: 30rem;
+  background-color: #f48e28;
+   border: solid ;
+  color: #fefefe;
+}
+/* @media (min-width: 1920px;) {
+  #index h1 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+  }
+} */

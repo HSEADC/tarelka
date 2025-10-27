@@ -127,3 +127,47 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* 
+@font-face {
+  font-family: 'PT Root UI';
+  src: url(fonts/f82344daaacb5424b169.woff),
+    url(fonts/f31c5219b0912845f393.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'PT Root UI';
+  src: url(fonts/e24244df074291681cd3.woff),
+    url(fonts/6f2ccf4ac327e1d6507e.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'PT Root UI';
+  src: url(fonts/ea7178e3e5d27a1d3248.woff),
+    url(fonts/b43dba986b9cde356afd.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'PT Root UI';
+  src: url(fonts/8bf08d3a5b04f523d0d4.woff),
+    url(fonts/f0497492db8214d4938e.woff2);
+  font-weight: 300;
+}
+
+body {
+  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-weight: 700;
+}
+h2 {
+  font-weight: 500;
+}
+h3 {
+  font-weight: 400;
+}
+h4 {
+  font-weight: 300;
+} */
+
+
+
