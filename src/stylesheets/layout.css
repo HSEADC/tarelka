@@ -9,16 +9,38 @@ html {
 }
 #index {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #fffafa;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  height: 97rem;
+  width: 1660rem;
+  align-items: center;
+}
+.headerlogo {
+  width: 144rem;
+}
+.headertg {
+  width: 32rem;
+  margin-left: 725rem;
 }
 #indexWrapper {
   margin-top: 249rem;
   width: 1455rem;
-  height: 450rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 86rem;
+}
+.indexContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 62rem;
 }
 
 .indexContainerInfo {
@@ -29,19 +51,38 @@ html {
   align-items: center;
   gap: 32rem;
 }
-.indexContainerInfoText {
+.indexContainerBottom {
+  width: 1455rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32rem;
+  height: 722rem;
+}
+.indexContainerInfoText,
+.indexContainerBottomText {
   gap: 8rem;
 }
 
-#index h1 {
-  font-weight: 400;
+.indexContainerInfoText h1 {
+  font-weight: 500;
   font-style: normal;
   font-size: 96rem;
   color: #100f15;
   text-align: center;
   line-height: 106rem;
 }
-#index h2 {
+.indexContainerBottomText h1 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 64rem;
+  color: #100f15;
+  text-align: center;
+  line-height: 70rem;
+}
+.indexContainerInfoText h2,
+.indexContainerBottomText h2 {
   font-weight: 300;
   font-style: normal;
   font-size: 24rem;
@@ -53,9 +94,6 @@ html {
 #index p {
   font-weight: 300;
   font-style: normal;
-  font-size: 20rem;
-  text-align: center;
-  line-height: 28.8rem;
 }
 #my-form-status {
   color: #76b976;
@@ -63,6 +101,9 @@ html {
 
 .Tag p {
   color: #f48e28;
+  text-align: center;
+  font-size: 20rem;
+  line-height: 28.8rem;
 }
 .Tag {
   background-color: #ffeedc;
@@ -81,7 +122,7 @@ html {
   justify-content: space-between;
 }
 
-form {
+.my-form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -100,8 +141,185 @@ form {
   height: 60rem;
   border-radius: 30rem;
   background-color: #f48e28;
-   border: solid ;
+  border: solid;
   color: #fefefe;
+  cursor: pointer;
+}
+#my-form-button:hover {
+  background-color: #f6a553;
+}
+.indexContainerDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 627rem;
+  justify-content: center;
+  gap: 32rem;
+}
+
+.indexContainerAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 960rem;
+  justify-content: center;
+  gap: 32rem;
+}
+
+.indexContainerAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 961rem;
+}
+
+.indexContainerDescriptionText {
+  font-weight: 500;
+  font-style: normal;
+  width: 1660rem;
+  font-size: 48rem;
+  text-align: left;
+  line-height: 60rem;
+}
+.Card h1 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 64rem;
+  text-align: left;
+  line-height: 74rem;
+  color: #f48e28;
+}
+
+.CardText h2 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24rem;
+  text-align: left;
+  line-height: 30rem;
+  color: #252432;
+}
+
+.CardText h3 {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18rem;
+  text-align: left;
+  line-height: 27rem;
+  color: #8987a1;
+}
+.indexContainerDescriptionCards {
+  display: flex;
+  flex-direction: row;
+  width: 1660rem;
+  justify-content: space-between;
+}
+.Card {
+  display: flex;
+  flex-direction: column;
+  gap: 32rem;
+  height: 296rem;
+  width: 540rem;
+  justify-content: space-around;
+  padding-left: 24rem;
+  background-color: #fefefe;
+  border-radius: 30rem;
+  padding-bottom: 32rem;
+  padding-top: 32rem;
+  box-shadow: 0 4px 10px rgba(98, 98, 98, 0.2);
+}
+.Card.first {
+  display: flex;
+  flex-direction: column;
+  gap: 200rem;
+  height: 612rem;
+  width: 540rem;
+  justify-content: center;
+  padding-left: 24rem;
+  background-color: #f48e28;
+  border-radius: 30rem;
+  padding-bottom: 32rem;
+}
+.Card.first h1,
+.CardText.first h2,
+.CardText.first h3 {
+  color: #fefefe;
+}
+.CardText.first h2 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 72rem;
+  text-align: left;
+  line-height: 72rem;
+}
+.CardText.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 241rem;
+}
+.CardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 126rem;
+}
+
+.CardWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 1100rem;
+  justify-content: space-between;
+}
+.AllSmallCardsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+.indexContainerAboutCards {
+  display: flex;
+  flex-direction: row;
+  gap: 20rem;
+}
+.highlight {
+  color: #329632;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 1660rem;
+  justify-content: space-between;
+  margin-bottom: 100rem;
+  margin-top: 100rem;
+}
+.footer p {
+  text-align: left;
+  color: #8987a1;
+  font-size: 16rem;
+  line-height: 20rem;
+}
+.footer h1 {
+  text-align: left;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 22rem;
+  line-height: 28.8rem;
+  color: #f48e28;
+}
+
+.footercolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+.telegramfooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8rem;
+}
+.footertg {
+  width: 24rem;
 }
 /* @media (min-width: 1920px;) {
   #index h1 {
