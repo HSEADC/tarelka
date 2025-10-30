@@ -30,17 +30,17 @@ html {
   margin-left: 725rem;
 }
 #indexWrapper {
-  margin-top: 249rem;
+  margin-top: 150rem;
   width: 1455rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 86rem;
+  gap: 50rem;
 }
 .indexContainer {
   display: flex;
   flex-direction: column;
-  gap: 62rem;
+  gap: 0rem;
 }
 
 .indexContainerInfo {
@@ -58,7 +58,7 @@ html {
   justify-content: center;
   align-items: center;
   gap: 32rem;
-  height: 722rem;
+  height: 500rem;
 }
 .indexContainerInfoText,
 .indexContainerBottomText {
@@ -152,26 +152,19 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 627rem;
+  height: 611rem;
   justify-content: center;
   gap: 32rem;
+  margin-top: 50rem;
 }
 
 .indexContainerAbout {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 960rem;
+  height: 928rem;
   justify-content: center;
   gap: 32rem;
-}
-
-.indexContainerAbout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 961rem;
 }
 
 .indexContainerDescriptionText {
@@ -183,7 +176,7 @@ html {
   line-height: 60rem;
 }
 .Card h1 {
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   font-size: 64rem;
   text-align: left;
@@ -192,7 +185,7 @@ html {
 }
 
 .CardText h2 {
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-size: 24rem;
   text-align: left;
