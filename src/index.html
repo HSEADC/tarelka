@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная</title>
+    <title>Tarelka</title>
+        <link rel="icon" type="image" href="/src/img/icon.png" />
   </head>
   <body id="index">
     <div class="header">
@@ -223,6 +224,7 @@
             .then((response) => {
               if (response.ok) {
                 status.style.color = '#50A773';
+                status.style.fontSize = '20rem';
                 status.style.textAlign = 'center';
                 status.innerHTML = 'Совсем скоро мы тебе напишем';
                 form.reset();
