@@ -4,15 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tarelka</title>
-        <link rel="icon" type="image" href="/src/img/icon.png" />
+    <link rel="icon" type="image" href="/src/img/icon.png" />
   </head>
   <body id="index">
     <div class="header">
       <li>
-        <img href="index.html" src="/src/img/logo.svg" class="headerlogo" />
+        <a href="index.html">
+          <img href="index.html" src="/src/img/logo.svg" class="headerlogo" />
+        </a>
       </li>
       <li>
-        <img href="https://t.me/tarelkafood12" src="/src/img/telegram.svg" class="headertg" />
+        <a href="https://t.me/tarelkafood12">
+          <img
+            href="https://t.me/tarelkafood12"
+            src="/src/img/telegram.svg"
+            class="headertg"
+          />
+        </a>
       </li>
     </div>
     <div id="indexWrapper">
@@ -100,8 +108,9 @@
               <div class="CardText first">
                 <h2>Правила<br />питания</h2>
                 <h3>
-    
-                  Базовые принципы, которые помогут выстроить<br />здоровые привычки без диет и ограничений.<br />Просто, понятно и применимо к жизни.
+                  Базовые принципы, которые помогут выстроить<br />здоровые
+                  привычки без диет и ограничений.<br />Просто, понятно и
+                  применимо к жизни.
                 </h3>
               </div>
             </div>
@@ -179,24 +188,31 @@
     <div class="footer">
       <div class="footercolumn">
         <li>
-          <img href="index.html" src="/src/img/logo.svg" class="headerlogo" />
+          <a href="index.html">
+            <img href="index.html" src="/src/img/logo.svg" class="headerlogo" />
+          </a>
         </li>
         <p>
-          Проект о питании без фанатизма и усталости.<br />Следи за запуском, чтобы
-          начать с первой ложки.
+          Проект о питании без фанатизма и усталости.<br />Следи за запуском,
+          чтобы начать с первой ложки.
         </p>
         <p>Copyright © 2025 by Tarelka. All Rights Reserved.</p>
       </div>
 
       <div class="footercolumn">
-        <h1>
-          Мы в соц.сетях:
-        </h1>
+        <h1>Мы в соц.сетях:</h1>
         <div class="telegramfooter">
-        <img href="index.html" src="/src/img/telegram.svg" class="footertg" />
-      </li>
-      <p>@tarelkamedia</p>
-      </div>
+          <li>
+            <a href="https://t.me/tarelkafood12">
+              <img
+                href="index.html"
+                src="/src/img/telegram.svg"
+                class="footertg"
+              />
+            </a>
+          </li>
+          <p>@tarelkamedia</p>
+        </div>
       </div>
     </div>
     <script>
@@ -210,7 +226,7 @@
           if (!input.value.trim()) {
             // проверка пустого поля
             status.style.color = '#B53737';
-              status.style.textAlign = 'center';
+            status.style.textAlign = 'center';
             status.innerHTML = 'Пожалуйста, заполните поле';
             return; // останавливаем fetch
           }
