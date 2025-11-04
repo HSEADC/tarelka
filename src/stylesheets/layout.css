@@ -60,10 +60,6 @@ html {
   gap: 32rem;
   height: 500rem;
 }
-.indexContainerInfoText,
-.indexContainerBottomText {
-  gap: 8rem;
-}
 
 .indexContainerInfoText h1 {
   font-weight: 500;
@@ -89,6 +85,7 @@ html {
   color: #100f15;
   text-align: center;
   line-height: 28.8rem;
+  margin-top: 8rem;
 }
 
 #index p {
