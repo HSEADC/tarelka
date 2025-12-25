@@ -1,0 +1,225 @@
+@media screen and (max-width: 600px) {
+  html {
+    font-size: calc(1vw / 3.93);
+  }
+  #indexWrapper {
+    width: calc(100% - 32rem);
+    margin-top: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 50rem;
+  }
+
+  .indexContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 62rem;
+  }
+
+  .indexContainerInfoTags {
+    display: none;
+  }
+
+  .indexContainerInfo,
+  .indexContainerBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20rem;
+    width: 361rem;
+  }
+  .indexContainerBottom {
+    height: 255rem;
+  }
+
+  .indexContainerInfoText h1 {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40rem;
+    text-align: left;
+    line-height: 44rem;
+    margin-bottom: 8rem;
+  }
+
+  .indexContainerBottomText h1 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32rem;
+    text-align: left;
+    line-height: 36rem;
+    margin-bottom: 8rem;
+  }
+  .indexContainerInfoText h2,
+  .indexContainerBottomText h2 {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16rem;
+    text-align: left;
+    line-height: 19.8rem;
+  }
+
+  #index form input {
+    height: 40rem;
+    border-radius: 30rem;
+    background-color: #fefefe;
+    border: solid 1rem #dadae2;
+    padding: 0 20rem;
+  }
+  .my-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 361rem;
+    gap: 10rem;
+  }
+  #my-form-button {
+    height: 40rem;
+    border-radius: 30rem;
+    background-color: #f48e28;
+    border: solid;
+    color: #fefefe;
+    cursor: pointer;
+  }
+  .indexContainer > div,
+  .indexContainerBottom > div,
+  .footer > div {
+    width: 100%;
+  }
+
+  .indexContainerDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 826rem;
+    justify-content: left;
+    gap: 20rem;
+  }
+
+  .indexContainerDescriptionText {
+    font-weight: 400;
+    font-style: normal;
+    width: 361rem;
+    font-size: 24rem;
+    text-align: left;
+    line-height: 29rem;
+  }
+  .indexContainerDescriptionCards {
+    display: flex;
+    flex-direction: column;
+    width: 361rem;
+    gap: 20rem;
+  }
+  .Card {
+    display: flex;
+    flex-direction: column;
+    gap: 32rem;
+    height: 236rem;
+    width: 361rem;
+    padding-left: 16rem;
+    padding-bottom: 16rem;
+    padding-top: 16rem;
+  }
+  .Card h1 {
+    font-weight: 400;
+    font-size: 56rem;
+    line-height: 64rem;
+  }
+  .CardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 108rem;
+  }
+  .CardText h3 {
+    font-size: 14rem;
+    line-height: 16rem;
+  }
+  .indexContainerAbout {
+    justify-content: left;
+    height: 1480rem;
+  }
+  .indexContainerAboutCards {
+    flex-direction: column;
+  }
+  .Card.first {
+    display: flex;
+    flex-direction: column;
+    gap: 45rem;
+    height: 350rem;
+    width: 361rem;
+    justify-content: center;
+    padding-left: 16rem;
+    border-radius: 30rem;
+    padding-bottom: 16rem;
+  }
+  .CardText.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16rem;
+    height: 172rem;
+  }
+  .CardWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 361rem;
+    gap: 20rem;
+  }
+  .CardText.first h2 {
+    font-size: 40rem;
+    line-height: 46rem;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 361rem;
+    align-items: center;
+  }
+  .headertg {
+    width: 32rem;
+    margin-left: 0rem;
+  }
+  .headerlogo {
+    width: 109rem;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 361rem;
+    justify-content: space-between;
+    margin-bottom: 50rem;
+    gap: 50rem;
+  }
+  .footer p {
+    text-align: left;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14rem;
+    line-height: 20rem;
+  }
+  .footer h1 {
+    text-align: left;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22rem;
+    line-height: 28.8rem;
+    color: #f48e28;
+  }
+  .footercolumn {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+  }
+  .telegramfooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8rem;
+  }
+  .footertg {
+    width: 24rem;
+  }
+}

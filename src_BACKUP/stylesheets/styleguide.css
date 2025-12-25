@@ -1,0 +1,256 @@
+@import 'reset.css';
+@import 'fonts.css';
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+html {
+  font-size: calc(1vw / 14.4);
+  scroll-behavior: smooth;
+}
+.header_container {
+  display: flex;
+  padding: 20rem 40rem;
+  justify-content: space-between;
+  align-items: end;
+}
+.logo {
+  height: 100%;
+}
+.header_burger-btn {
+  z-index: 2;
+  display: none;
+  position: relative;
+  width: 32rem;
+  height: 32rem;
+  border: none;
+  border-radius: 100%;
+  background-color: #93ad49;
+}
+.header_burger-btn span {
+  position: absolute;
+  width: 16rem;
+  height: 2rem;
+  background-color: white;
+  left: 8rem;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.header_burger-btn span:nth-child(1) {
+  transform: translateY(-5rem);
+}
+.header_burger-btn span:nth-child(3) {
+  transform: translateY(5rem);
+}
+.header.open .header_burger-btn span:nth-child(2) {
+  opacity: 0%;
+}
+.header.open .header_burger-btn span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+.header.open .header_burger-btn span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+.styleguideText {
+  color: #93ad49;
+  opacity: 100%;
+}
+main {
+  display: flex;
+  padding-top: 100rem;
+}
+
+.headerImage {
+  width: 100%;
+  height: 100%;
+}
+.mainSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 100rem;
+}
+.mainSection:nth-of-type(1),
+.mainSection:nth-of-type(3) {
+  width: 20%;
+}
+.mainSection:nth-of-type(1) {
+  padding-left: 40rem;
+}
+.mainSection:nth-of-type(2) {
+  width: 60%;
+  margin-bottom: 150rem;
+}
+a {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 25rem;
+  line-height: 26rem;
+  color: white;
+  opacity: 60%;
+  text-decoration: none;
+  transition: all ease 0.2s;
+}
+a:hover {
+  opacity: 100%;
+  transition: all ease 0.4s;
+}
+.mainSectionSidebar {
+  position: fixed;
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  gap: 25rem;
+  background-color: #93ad49;
+  border-radius: 24rem;
+  padding: 40rem 30rem 40rem;
+  top: 100rem;
+}
+
+h1 {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 76rem;
+  line-height: 100rem;
+  color: #3a3a3a;
+}
+h2 {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 48rem;
+  line-height: 60rem;
+  color: #3a3a3a;
+}
+h3,
+li {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 24rem;
+  line-height: 30rem;
+  color: #3a3a3a;
+}
+p {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: 20rem;
+  line-height: 24rem;
+  color: #3a3a3a;
+}
+.mainSectionBlock {
+  padding-left: 28rem;
+  display: flex;
+  flex-direction: column;
+  gap: 50rem;
+}
+.mainSection:nth-of-type(2) img {
+  width: 100%;
+}
+.mainSectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+.mainSectionImageCaptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .mainSection:nth-of-type(2) {
+    width: 80%;
+    padding: 0 20rem;
+  }
+  .mainSection:nth-of-type(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: calc(1vw / 3.93);
+  }
+  .header_container {
+    padding: 20rem;
+  }
+  .header_burger-btn {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    background-color: #93ad49;
+    padding: 100rem 40rem 100rem 40rem;
+    width: 393rem;
+    left: -393rem;
+    transition: transform 0.3s;
+  }
+  .header.open .menu {
+    z-index: 1;
+    transform: translateX(100%);
+  }
+  .styleguideText {
+    display: none;
+  }
+  .menu_list {
+    display: block;
+  }
+  .menu_link {
+    color: white;
+    opacity: 100%;
+    display: block;
+    padding: 10rem 0;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20rem;
+  }
+
+  .mainSection:nth-of-type(2) {
+    padding: 20rem;
+    width: 100%;
+    gap: 50rem;
+    margin-bottom: 30rem;
+  }
+  .mainSectionSidebar {
+    display: none;
+  }
+  .mainSectionBlock {
+    padding-left: 0rem;
+    gap: 30rem;
+  }
+  h1 {
+    font-size: 45rem;
+    line-height: 47rem;
+  }
+  h2 {
+    font-size: 28rem;
+    line-height: 30rem;
+  }
+  h3 {
+    font-size: 20rem;
+    line-height: 24rem;
+  }
+  p {
+    font-size: 16rem;
+    line-height: 18rem;
+  }
+  a {
+    font-size: 20rem;
+    line-height: 24rem;
+  }
+  .mainSectionContainer {
+    gap: 10rem;
+  }
+  .mainSectionImageCaptionContainer {
+    gap: 5rem;
+  }
+}

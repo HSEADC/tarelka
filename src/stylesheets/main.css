@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+html {
+  font-size: calc(1vw / 19.2);
+}
