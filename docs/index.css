@@ -223,6 +223,463 @@ body {
 html {
   font-size: calc(1vw / 19.2);
 }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100rem;
+  width: 100%;
+  gap: 240rem;
+}
+h1 {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 140rem;
+  line-height: 110%;
+  color: #3a3a3a;
+}
+p {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: 24rem;
+  line-height: 140%;
+  color: #3a3a3a;
+}
+h2 {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 64rem;
+  line-height: 100%;
+  color: #3a3a3a;
+}
+h3 {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 48rem;
+  line-height: 140%;
+  color: #3a3a3a;
+  text-transform: uppercase;
+}
+h5 {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 36rem;
+  line-height: auto;
+  color: #fefefe;
+}
+a {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 20rem;
+  line-height: 120%;
+  color: #3a3a3a;
+  text-decoration: none;
+}
+a:hover {
+  color: #ed7d41;
+}
+.logo {
+  display: block;
+  width: 8%;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+.header {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rem 0;
+}
+.menu_list {
+  display: flex;
+  flex-direction: row;
+  gap: 48rem;
+}
+button {
+  background-color: #ed7d41;
+  border-radius: 100rem;
+  border: none;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 20rem;
+  line-height: 100%;
+  color: #fefefe;
+  padding: 20rem 107rem;
+  width: 400rem;
+  cursor: pointer;
+}
+.green_button {
+  background-color: #93ad49;
+  border-radius: 100rem;
+  border: none;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 8rem;
+  width: 300rem;
+}
+
+.green_button:hover {
+  background-color: #c0d489;
+}
+.green_button img {
+  width: 40rem;
+}
+.green_button a {
+  color: #fefefe;
+  padding-left: 35rem;
+}
+button:hover {
+  background-color: #f69967;
+}
+input {
+  width: 421rem;
+  height: auto;
+
+  background-color: #fefefe;
+  border: 1rem solid #dadae2;
+  border-radius: 100rem;
+
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 100%;
+  color: #000; /* можно поменять */
+
+  padding: 20rem 24rem; /* слева 24rem, вертикаль как у кнопки */
+
+  display: flex;
+  align-items: center; /* вертикальное выравнивание текста */
+}
+
+.Section_1 {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.Section_1__div_1 {
+  grid-area: 1 / 1 / 3 / 6;
+  display: flex;
+  flex-direction: column;
+  gap: 32rem;
+}
+.Section_1__div_2 {
+  grid-area: 1 / 6 / 3 / 10;
+}
+img {
+  width: 100%;
+}
+.Section_1__div_3 {
+  grid-area: 1 / 10 / 2 / 13;
+}
+
+.Section_1__div_4 {
+  grid-area: 2 / 10 / 3 / 13;
+}
+.Section_2__main,
+.Section_6__main {
+  display: flex;
+  background-color: #2b6243;
+  justify-content: center;
+  width: 100%;
+  padding: 150rem 0;
+}
+.Section_2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  width: 90%;
+}
+.Section_2 h3,
+.Section_2 p {
+  color: #fefefe;
+  width: 80%;
+}
+
+.Section_2__div_1 {
+  grid-area: 1 / 1 / 3 / 6;
+  display: flex;
+  flex-direction: column;
+  gap: 32rem;
+}
+.Section_2__div_2 {
+  grid-area: 1 / 6 / 3 / 11;
+}
+.Section_2__div_3 {
+  grid-area: 1 / 11 / 2 / 13;
+}
+.Section_2__div_4 {
+  grid-area: 2 / 11 / 3 / 13;
+}
+.Section_3,
+.Section_4,
+.Section_5 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 48rem;
+}
+.Section_3 h3,
+.Section_4 h3 {
+  width: 40%;
+}
+.Section_5 h3 {
+  width: 60%;
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.Section_6__parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.Section_6 {
+  width: 90%;
+}
+
+.Section_6__div_2 {
+  grid-area: 1 / 9 / 3 / 13;
+}
+.Section_6__div_1 {
+  grid-area: 1 / 1 / 3 / 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32rem;
+}
+
+.circles {
+  display: flex;
+  gap: 20rem;
+}
+.circles img {
+  width: 85rem;
+}
+.Section_6__div_1 h3 {
+  width: 90%;
+  color: #fefefe;
+}
+.form {
+  display: flex;
+  align-items: center;
+  gap: 12rem;
+}
+.Section__Cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24rem;
+}
+
+/* Общая карточка */
+.card {
+  position: relative;
+  background-color: #2b6243;
+  border-radius: 40rem;
+  padding: 24rem 20rem;
+  min-height: 505rem;
+}
+.tag-arrow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.tag-arrow img {
+  width: 50rem;
+}
+.Section__Cards article {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+  align-items: flex-start;
+}
+.Section__Cards p {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: 20rem;
+  line-height: 120%;
+  color: #fefefe;
+  text-decoration: none;
+}
+
+/* Светлая карточка */
+.card--light {
+  background-color: #f3f3f6;
+  color: #1a1a1a;
+  padding: 20rem 24rem;
+}
+
+/* Тег */
+.card-tag {
+  display: inline-block;
+  padding: 17rem 24rem;
+  border-radius: 100rem;
+  font-size: 16rem;
+  color: #fefefe;
+}
+
+.card-tag--green {
+  background-color: #a3bd5b;
+}
+.card-tag--blue {
+  background-color: #969ada;
+}
+.card-tag--olive {
+  background-color: #4f976e;
+}
+.card-tag--orange {
+  background-color: #f69967;
+}
+.card-tag--pink {
+  background-color: #ea86d1;
+}
+.card-tag--white {
+  background-color: #f3f3f6;
+  color: #1a1a1a;
+}
+
+.card-title--dark {
+  color: #3a3a3a;
+}
+
+/* Текст */
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+}
+
+/* Картинка */
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Номер */
+.card h2 {
+  color: #ed7d41;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 5%;
+}
+.footer p {
+  text-align: left;
+  color: #8987a1;
+  font-size: 16rem;
+  line-height: 20rem;
+}
+.footer h1 {
+  text-align: left;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 22rem;
+  line-height: 28.8rem;
+  color: #f48e28;
+}
+
+.footercolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+.telegramfooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8rem;
+}
+.footertg {
+  width: 24rem;
+}
+.menu_link.active {
+  color: #ed7d41;
+}
+.about_Section_1 {
+  width: 80%;
+}
+.search-input {
+  padding-left: 40px; /* место под иконку */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23999%27 stroke-width=%272%27%3E%3Ccircle cx=%2711%27 cy=%2711%27 r=%277%27/%3E%3Cline x1=%2716.65%27 y1=%2716.65%27 x2=%2721%27 y2=%2721%27/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  background-size: 18px;
+}
+#search {
+  padding: 15rem 50rem;
+}
+.about_Section_2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.about_Section_2__parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 20rem;
+  grid-row-gap: 32rem;
+  width: 80%;
+}
+
+.about_Section_2__div_1 {
+  grid-area: 1 / 1 / 3 / 5;
+}
+.about_Section_2__div_2 {
+  grid-area: 3 / 1 / 7 / 5;
+}
+.about_Section_2__div_3 {
+  grid-area: 1 / 6 / 3 / 13;
+}
+.about_Section_2__div_4 {
+  grid-area: 3 / 6 / 5 / 13;
+}
+.about_Section_2__div_5 {
+  grid-area: 5 / 6 / 7 / 13;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24rem;
+}
+.item img {
+  width: 30%;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+  width: 70%;
+}
+
 @media screen and (max-width: 600px) {
   html {
     font-size: calc(1vw / 3.93);
