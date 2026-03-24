@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+html {
+  font-size: calc(1vw / 19.2);
+}
+
+h1 {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 140rem;
+  line-height: 100%;
+  color: var(--text-main-color);
+}
+p {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: 24rem;
+  line-height: 140%;
+  color: var(--text-main-color);
+}
+h2 {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 64rem;
+  line-height: 100%;
+  color: var(--text-main-color);
+}
+h3 {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 48rem;
+  line-height: 120%;
+  color: var(--text-main-color);
+}
+h5 {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 36rem;
+  line-height: auto;
+  color: #fefefe;
+}
+a,
+label {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 20rem;
+  line-height: 120%;
+  color: var(--text-main-color);
+  text-decoration: none;
+}
+a:hover {
+  color: #ed7d41;
+}
+header {
+  margin-top: 20rem;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.menu_list {
+  display: flex;
+  flex-direction: row;
+  gap: 48rem;
+}
+.O_Header {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rem 0;
+}
+section {
+  width: 100vw;
+}
+img {
+  width: 100%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+:root {
+  --text-main-color: #ffffff;
+  --btn-basic-color: #f69967;
+  --btn-hover-color: #ed7d41;
+  --main-green-color: #2b6243;
+  --secondary-green-color: #4f976e;
+  --main-light-green-color: #a3bd5b;
+  --main-orange-color: #ed7d41;
+  --main-purple-color: #969ada;
+  --main-pink-color: #ea86d1;
+  --main-black-color: #3a3a3a;
+  --card-gray-color: #f3f3f6;
+}

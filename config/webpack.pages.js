@@ -9,32 +9,50 @@ function createPage(template, filename, chunks) {
 }
 
 const htmlPages = [
-  createPage('./src/index.html', './index.html', ['index']),
-  createPage('./src/pages/articles.html', './pages/articles.html', ['index']),
+  createPage('./src/index1.html', './index1.html', [ 'basic']),
+
+  createPage('./src/index.html', './index.html', ['index', 'basic']),
+  createPage('./src/pages/articles.html', './pages/articles.html', [
+    'index',
+    'basic',
+  ]),
   createPage(
     './src/pages/articles/article1.html',
     './pages/articles/article1.html',
-    ['index']
+    ['index', 'basic'],
   ),
   createPage(
     './src/pages/articles/article2.html',
     './pages/articles/article2.html',
-    ['index']
+    ['index', 'basic'],
   ),
   createPage(
     './src/pages/articles/article3.html',
     './pages/articles/article3.html',
-    ['index']
+    ['index', 'basic'],
   ),
   createPage(
     './src/pages/articles/article4.html',
     './pages/articles/article4.html',
-    ['index']
+    ['index', 'basic'],
   ),
-  createPage('./src/pages/about.html', './pages/about.html', ['index']),
-  createPage('./src/pages/recepies.html', './pages/recepies.html', ['index']),
-    createPage('./src/pages/tests.html', './pages/tests.html', ['index']),
-  createPage('./src/styleguide.html', './styleguide.html', ['styleguide']),
+
+  createPage('./src/pages/recepies.html', './pages/recepies.html', [
+    'index',
+    'basic',
+  ]),
+  createPage('./src/pages/tests.html', './pages/tests.html', [
+    'index',
+    'basic',
+  ]),
+  createPage('./src/pages/tests/test1.html', './pages/tests/test1.html', [
+    'test1',
+    'basic',
+  ]),
+  createPage('./src/pages/tests/test2.html', './pages/tests/test2.html', [
+    'test2',
+    'basic',
+  ]),
 ];
 
 module.exports = htmlPages;

@@ -1,0 +1,76 @@
+/* main */
+.A_NavigationLogo path {
+  display: block;
+  width: 8%;
+  fill: white;
+}
+.A_NavigationLogo {
+  z-index: 1000;
+}
+.A_NavigationLogo svg:hover path {
+  fill: white;
+}
+.A_MenuLink.active {
+  color: var(--menu-hover-color);
+}
+.A_Button_Primary {
+  background-color: var(--btn-basic-color);
+  border-radius: 100rem;
+  border: none;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 20rem;
+  line-height: 100%;
+  color: var(--text-main-color);
+  padding: 20rem 107rem;
+  cursor: pointer;
+  display: inline-block;
+}
+.button_hero {
+  width: 400rem;
+}
+.A_Button_Primary:hover {
+  background-color: var(--btn-hover-color);
+}
+.A_TitleSection_About {
+  text-align: center;
+}
+.A_TitleSection_CardWide {
+  margin: 112rem 0 20rem 160rem;
+  width: 555rem;
+  line-height: 100%;
+}
+.A_Subtitle__CardWide {
+  margin-left: 160rem;
+  width: 632rem;
+}
+
+.A_Subtitle__CardSmall {
+  text-align: center;
+}
+.A_TitleSection_Black {
+  color: var(--main-black-color);
+}
+.A_Form_Input {
+  display: flex;
+  gap: 12rem;
+}
+input {
+  width: 421rem;
+  height: auto;
+
+  background-color: #fefefe;
+  border: 1rem solid #dadae2;
+  border-radius: 100rem;
+
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 100%;
+  color: #000; /* можно поменять */
+
+  padding: 20rem 24rem; /* слева 24rem, вертикаль как у кнопки */
+
+  display: flex;
+  align-items: center; /* вертикальное выравнивание текста */
+}

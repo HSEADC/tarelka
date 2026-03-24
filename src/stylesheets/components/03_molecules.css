@@ -1,0 +1,14 @@
+/* main */
+.M_MenuList {
+  display: flex;
+  flex-direction: row;
+  gap: 48rem;
+}
+.M_Logo {
+  position: relative;
+  height: 100%;
+}
+.M_TitleLink{
+  display: flex;
+  justify-content: space-between;
+}

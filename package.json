@@ -1,7 +1,7 @@
 {
   "name": "Tarelka",
   "version": "1.0.0",
-  "author": "Ivan Chastov",
+  "author": "Leukhina Polina",
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --open --config config/webpack.dev.js",
@@ -32,5 +32,8 @@
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2",
     "webpack-merge": "^6.0.1"
+  },
+  "dependencies": {
+    "airtable": "^0.12.2"
   }
 }

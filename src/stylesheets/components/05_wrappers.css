@@ -1,0 +1,26 @@
+/* main */
+.W_Text_CardSmall {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.W_Text_Test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20rem;
+}
+
+.W_Test_Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32rem;
+}
+
+.W_Test_Container button {
+  width: 400rem;
+}

@@ -1,0 +1,8 @@
+/* main */
+.C_AboutCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20rem;
+  grid-row-gap: 20rem;
+}

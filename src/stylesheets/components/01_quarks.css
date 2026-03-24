@@ -1,0 +1,152 @@
+/* main */
+.Q_LogoMove_Banana,
+.Q_LogoMove_Strawberry,
+.Q_LogoMove_Strawberry1 {
+  width: 80rem;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.Q_LogoMove_Banana {
+  left: -15rem;
+}
+.Q_LogoMove_Strawberry {
+  top: 25rem;
+}
+.Q_LogoMove_Strawberry1 {
+  left: 50rem;
+}
+.Q_LogoMove_Kiwi {
+  left: 85rem;
+  top: 10rem;
+}
+.Q_LogoMove_Tomato,
+.Q_LogoMove_Peach,
+.Q_LogoMove_Kiwi,
+.Q_LogoMove_Strawberry1 {
+  width: 60rem;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.Q_LogoMove_Banana.animation {
+  animation: banana 0.4s ease-in-out 1 forwards;
+}
+
+@keyframes banana {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-80rem, 0rem) rotate(56deg);
+    opacity: 0;
+  }
+}
+
+.Q_LogoMove_Tomato.animation {
+  animation: tomato 0.4s ease-in-out 1 forwards;
+}
+
+@keyframes tomato {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-20rem, -40rem) rotate(180deg);
+    opacity: 0;
+  }
+}
+.Q_LogoMove_Kiwi.animation {
+  animation: kiwi 0.4s ease-in-out 1 forwards;
+}
+
+@keyframes kiwi {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(60rem, 40rem) rotate(140deg);
+    opacity: 0;
+  }
+}
+
+.Q_LogoMove_Strawberry.animation {
+  animation: strawberry 0.4s ease-in-out 1 forwards;
+}
+
+@keyframes strawberry {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0rem, 40rem) rotate(-40deg);
+    opacity: 0;
+  }
+}
+.Q_LogoMove_Strawberry1.animation {
+  animation: strawberry1 0.4s ease-in-out 1 forwards;
+}
+
+@keyframes strawberry1 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(70rem, -40rem) rotate(-80deg);
+    opacity: 0;
+  }
+}
+
+.Q_NavigationTelegram path {
+  display: block;
+  width: 8%;
+  fill: var(--btn-basic-color);
+}
+
+.Q_NavigationTelegram svg:hover path {
+  fill: var(--btn-hover-color);
+}
+
+.Q_Recepie_Img {
+  width: 330rem;
+}
