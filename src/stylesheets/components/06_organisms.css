@@ -57,7 +57,7 @@
   justify-content: space-between;
   padding: 80rem 150rem;
 }
-.O_RecipesCards {
+.O_RecipesCardsMain {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -89,4 +89,18 @@
   grid-area: 3 / 2 / 5 / 4;
   background-color: var(--card-gray-color);
   border-radius: 40rem;
+}
+.O_RecipesCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rem;
+  justify-content: center;
+}
+
+.O_RecipesCardsM {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rem;
+  justify-content: center;
+  margin-top: 48rem;
 }
