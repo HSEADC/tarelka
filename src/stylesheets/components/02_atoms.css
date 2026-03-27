@@ -75,4 +75,25 @@ input {
   align-items: center; /* вертикальное выравнивание текста */
 }
 
+.A_DescriptionCard {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: 20rem;
+  line-height: 120%;
+  color: var(--text-main-color);
+}
 
+.A_Arrow {
+  background-image: url(/src/img/A_IconExtra.svg);
+  width: 40rem;
+  height: 40rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.A_NavigationLogoBlack path {
+  display: block;
+  width: 8%;
+  fill: var(--main-black-color);
+}

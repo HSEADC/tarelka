@@ -24,3 +24,20 @@
 .W_Test_Container button {
   width: 400rem;
 }
+
+.W_ArticleTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.W_ArticleText {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+
+.W_FooterWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
