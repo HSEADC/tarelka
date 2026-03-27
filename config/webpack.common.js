@@ -8,7 +8,6 @@ module.exports = {
     test1: './src/javascripts/test1.js',
     test2: './src/javascripts/test2.js',
     basic: './src/javascripts/basic.js',
-    index1:'./src/javascripts/index1.js',
   },
   output: {
     path: path.resolve('.', 'docs'),
@@ -19,6 +18,7 @@ module.exports = {
     rules: [
       {
         test: /\.html$/i,
+        exclude: /src\/(index|pages)/, // исключаем страницы
         loader: 'html-loader',
       },
       {

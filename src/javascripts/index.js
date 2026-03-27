@@ -141,10 +141,10 @@ document.addEventListener('DOMContentLoaded', () => {
               id: record.id,
               title: record.fields['Title'],
               description: record.fields['Description'],
-              tag: record.fields['Tags'], // ⚠️ не массив
+              tag: record.fields['Tags'],
               link: record.fields['URL'],
-              img: record.fields['Image'], // ⚠️ другое имя
-              size: record.fields['Size'], // ⚠️ другое имя
+              img: record.fields['Image'],
+              size: record.fields['Size'],
             });
           });
 
@@ -220,3 +220,18 @@ document.addEventListener('DOMContentLoaded', () => {
     createArticlesCards(content);
   });
 });
+
+import banana from '../img/logoanimation/Banana.png';
+document.querySelector('.Q_LogoMove_Banana').src = banana;
+
+import kiwi from '../img/logoanimation/Kiwi.png';
+document.querySelector('.Q_LogoMove_Kiwi').src = kiwi;
+
+import strawberry from '../img/logoanimation/Strawberry.png';
+document.querySelector('.Q_LogoMove_Strawberry').src = strawberry;
+
+import strawberry1 from '../img/logoanimation/Strawberry1.png';
+document.querySelector('.Q_LogoMove_Strawberry1').src = strawberry1;
+
+import tomato from '../img/logoanimation/Tomato.png';
+document.querySelector('.Q_LogoMove_Tomato').src = tomato;

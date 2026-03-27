@@ -111,8 +111,15 @@
   justify-content: center;
 }
 
-.O_Footer{
+.O_Footer {
   display: flex;
- flex-direction: column;
- gap: 20rem;
+  flex-direction: column;
+  gap: 20rem;
+}
+.O_Header.article a {
+  color: var(--main-black-color);
+}
+
+.O_Header.article a:hover {
+  color: var(--main-orange-color);
 }

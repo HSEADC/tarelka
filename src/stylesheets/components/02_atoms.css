@@ -97,3 +97,15 @@ input {
   width: 8%;
   fill: var(--main-black-color);
 }
+
+.A_NavigationLogo.article path {
+  display: block;
+  width: 8%;
+  fill: var(--main-black-color);
+}
+
+.A_NavigationLogo.article svg:hover path {
+  display: block;
+  width: 8%;
+  fill: var(--main-black-color);
+}
