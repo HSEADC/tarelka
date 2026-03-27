@@ -1,0 +1,1 @@
+(()=>{"use strict";var e,t;e=document.querySelector(".A_NavigationLogo"),t=document.querySelectorAll('[class^="Q_LogoMove_"]'),e.addEventListener("mouseenter",function(){t.forEach(function(e){return e.classList.add("animation")}),setTimeout(function(){t.forEach(function(e){return e.classList.remove("animation")})},610)})})();

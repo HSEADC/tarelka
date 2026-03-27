@@ -1,0 +1,1145 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* 
+@font-face {
+  font-family: 'PT Root UI';
+  src: url(fonts/f82344daaacb5424b169.woff),
+    url(fonts/f31c5219b0912845f393.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'PT Root UI';
+  src: url(fonts/e24244df074291681cd3.woff),
+    url(fonts/6f2ccf4ac327e1d6507e.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'PT Root UI';
+  src: url(fonts/ea7178e3e5d27a1d3248.woff),
+    url(fonts/b43dba986b9cde356afd.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'PT Root UI';
+  src: url(fonts/8bf08d3a5b04f523d0d4.woff),
+    url(fonts/f0497492db8214d4938e.woff2);
+  font-weight: 300;
+}
+
+body {
+  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-weight: 700;
+}
+h2 {
+  font-weight: 500;
+}
+h3 {
+  font-weight: 400;
+}
+h4 {
+  font-weight: 300;
+} */
+
+
+
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(fonts/358a4629d0320437d22e.ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(fonts/a6767dc546b61fb075f2.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(fonts/c1e5c21a326905f47434.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(fonts/995358969571c1c37362.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Опционально — курсивные стили */
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(fonts/f8eadd5cc5bdd24a63bc.ttf) format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(fonts/cb07e3c467987cb3fbb3.ttf) format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+html {
+  font-size: calc(1vw / 19.2);
+}
+
+h1 {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 140rem;
+  line-height: 100%;
+  color: var(--text-main-color);
+}
+p {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: 24rem;
+  line-height: 140%;
+  color: var(--text-main-color);
+}
+h2 {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 64rem;
+  line-height: 100%;
+  color: var(--text-main-color);
+}
+h4 {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 32rem;
+  line-height: 120%;
+  color: var(--text-main-color);
+}
+h3 {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 48rem;
+  line-height: 120%;
+  color: var(--text-main-color);
+}
+h5 {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 36rem;
+  line-height: auto;
+  color: #fefefe;
+}
+a,
+label {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 20rem;
+  line-height: 120%;
+  color: var(--text-main-color);
+  text-decoration: none;
+}
+a:hover {
+  color: #ed7d41;
+}
+span {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 16rem;
+  color: var(--text-main-color);
+  text-decoration: none;
+}
+header {
+  margin-top: 20rem;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.menu_list {
+  display: flex;
+  flex-direction: row;
+  gap: 48rem;
+}
+.O_Header {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rem 0;
+}
+section {
+  width: 100vw;
+}
+img {
+  width: 100%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+:root {
+  --text-main-color: #ffffff;
+  --btn-basic-color: #f69967;
+  --btn-hover-color: #ed7d41;
+  --main-green-color: #2b6243;
+  --secondary-green-color: #4f976e;
+  --main-light-green-color: #a3bd5b;
+  --main-orange-color: #ed7d41;
+  --main-purple-color: #969ada;
+  --main-pink-color: #ea86d1;
+  --main-black-color: #3a3a3a;
+  --card-gray-color: #f3f3f6;
+  --secondary-light-blue-color: #e8e9ff;
+  --secondary-light-green-color: #dde7c1;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: calc(1vw / 3.93);
+  }
+  #indexWrapper {
+    width: calc(100% - 32rem);
+    margin-top: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 50rem;
+  }
+
+  .indexContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 62rem;
+  }
+
+  .indexContainerInfoTags {
+    display: none;
+  }
+
+  .indexContainerInfo,
+  .indexContainerBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20rem;
+    width: 361rem;
+  }
+  .indexContainerBottom {
+    height: 255rem;
+  }
+
+  .indexContainerInfoText h1 {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40rem;
+    text-align: left;
+    line-height: 44rem;
+    margin-bottom: 8rem;
+  }
+
+  .indexContainerBottomText h1 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32rem;
+    text-align: left;
+    line-height: 36rem;
+    margin-bottom: 8rem;
+  }
+  .indexContainerInfoText h2,
+  .indexContainerBottomText h2 {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16rem;
+    text-align: left;
+    line-height: 19.8rem;
+  }
+
+  #index form input {
+    height: 40rem;
+    border-radius: 30rem;
+    background-color: #fefefe;
+    border: solid 1rem #dadae2;
+    padding: 0 20rem;
+  }
+  .my-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 361rem;
+    gap: 10rem;
+  }
+  #my-form-button {
+    height: 40rem;
+    border-radius: 30rem;
+    background-color: #f48e28;
+    border: solid;
+    color: #fefefe;
+    cursor: pointer;
+  }
+  .indexContainer > div,
+  .indexContainerBottom > div,
+  .footer > div {
+    width: 100%;
+  }
+
+  .indexContainerDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 826rem;
+    justify-content: left;
+    gap: 20rem;
+  }
+
+  .indexContainerDescriptionText {
+    font-weight: 400;
+    font-style: normal;
+    width: 361rem;
+    font-size: 24rem;
+    text-align: left;
+    line-height: 29rem;
+  }
+  .indexContainerDescriptionCards {
+    display: flex;
+    flex-direction: column;
+    width: 361rem;
+    gap: 20rem;
+  }
+  .Card {
+    display: flex;
+    flex-direction: column;
+    gap: 32rem;
+    height: 236rem;
+    width: 361rem;
+    padding-left: 16rem;
+    padding-bottom: 16rem;
+    padding-top: 16rem;
+  }
+  .Card h1 {
+    font-weight: 400;
+    font-size: 56rem;
+    line-height: 64rem;
+  }
+  .CardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 108rem;
+  }
+  .CardText h3 {
+    font-size: 14rem;
+    line-height: 16rem;
+  }
+  .indexContainerAbout {
+    justify-content: left;
+    height: 1480rem;
+  }
+  .indexContainerAboutCards {
+    flex-direction: column;
+  }
+  .Card.first {
+    display: flex;
+    flex-direction: column;
+    gap: 45rem;
+    height: 350rem;
+    width: 361rem;
+    justify-content: center;
+    padding-left: 16rem;
+    border-radius: 30rem;
+    padding-bottom: 16rem;
+  }
+  .CardText.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16rem;
+    height: 172rem;
+  }
+  .CardWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 361rem;
+    gap: 20rem;
+  }
+  .CardText.first h2 {
+    font-size: 40rem;
+    line-height: 46rem;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 361rem;
+    align-items: center;
+  }
+  .headertg {
+    width: 32rem;
+    margin-left: 0rem;
+  }
+  .headerlogo {
+    width: 109rem;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 361rem;
+    justify-content: space-between;
+    margin-bottom: 50rem;
+    gap: 50rem;
+  }
+  .footer p {
+    text-align: left;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14rem;
+    line-height: 20rem;
+  }
+  .footer h1 {
+    text-align: left;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22rem;
+    line-height: 28.8rem;
+    color: #f48e28;
+  }
+  .footercolumn {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+  }
+  .telegramfooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8rem;
+  }
+  .footertg {
+    width: 24rem;
+  }
+}
+
+/* main */
+.Q_LogoMove_Banana,
+.Q_LogoMove_Strawberry,
+.Q_LogoMove_Strawberry1 {
+  width: 80rem;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.Q_LogoMove_Banana {
+  left: -15rem;
+}
+.Q_LogoMove_Strawberry {
+  top: 25rem;
+}
+.Q_LogoMove_Strawberry1 {
+  left: 50rem;
+}
+.Q_LogoMove_Kiwi {
+  left: 85rem;
+  top: 10rem;
+}
+.Q_LogoMove_Tomato,
+.Q_LogoMove_Peach,
+.Q_LogoMove_Kiwi,
+.Q_LogoMove_Strawberry1 {
+  width: 60rem;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.Q_LogoMove_Banana.animation {
+  animation: banana 0.4s ease-in-out 1 forwards;
+}
+
+@keyframes banana {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-80rem, 0rem) rotate(56deg);
+    opacity: 0;
+  }
+}
+
+.Q_LogoMove_Tomato.animation {
+  animation: tomato 0.4s ease-in-out 1 forwards;
+}
+
+@keyframes tomato {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-20rem, -40rem) rotate(180deg);
+    opacity: 0;
+  }
+}
+.Q_LogoMove_Kiwi.animation {
+  animation: kiwi 0.4s ease-in-out 1 forwards;
+}
+
+@keyframes kiwi {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(60rem, 40rem) rotate(140deg);
+    opacity: 0;
+  }
+}
+
+.Q_LogoMove_Strawberry.animation {
+  animation: strawberry 0.4s ease-in-out 1 forwards;
+}
+
+@keyframes strawberry {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0rem, 40rem) rotate(-40deg);
+    opacity: 0;
+  }
+}
+.Q_LogoMove_Strawberry1.animation {
+  animation: strawberry1 0.4s ease-in-out 1 forwards;
+}
+
+@keyframes strawberry1 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(70rem, -40rem) rotate(-80deg);
+    opacity: 0;
+  }
+}
+
+.Q_NavigationTelegram path {
+  display: block;
+  width: 8%;
+  fill: var(--btn-basic-color);
+}
+
+.Q_NavigationTelegram svg:hover path {
+  fill: var(--btn-hover-color);
+}
+
+
+
+.Q_Recepie_Img {
+  width: 330rem;
+}
+
+/* main */
+.A_NavigationLogo path {
+  display: block;
+  width: 8%;
+  fill: white;
+}
+.A_NavigationLogo {
+  z-index: 1000;
+}
+.A_NavigationLogo svg:hover path {
+  fill: white;
+}
+.A_MenuLink.active {
+  color: var(--menu-hover-color);
+}
+.A_Button_Primary {
+  background-color: var(--btn-basic-color);
+  border-radius: 100rem;
+  border: none;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 20rem;
+  line-height: 100%;
+  color: var(--text-main-color);
+  padding: 20rem 107rem;
+  cursor: pointer;
+  display: inline-block;
+}
+.button_hero {
+  width: 400rem;
+}
+.A_Button_Primary:hover {
+  background-color: var(--btn-hover-color);
+}
+.A_TitleSection_About {
+  text-align: center;
+}
+.A_TitleSection_CardWide {
+  margin: 112rem 0 20rem 160rem;
+  width: 555rem;
+  line-height: 100%;
+}
+.A_Subtitle__CardWide {
+  margin-left: 160rem;
+  width: 632rem;
+}
+
+.A_Subtitle__CardSmall {
+  text-align: center;
+}
+.A_TitleSection_Black {
+  color: var(--main-black-color);
+}
+.A_Form_Input {
+  display: flex;
+  gap: 12rem;
+}
+input {
+  width: 421rem;
+  height: auto;
+
+  background-color: #fefefe;
+  border: 1rem solid #dadae2;
+  border-radius: 100rem;
+
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 100%;
+  color: #000; /* можно поменять */
+
+  padding: 20rem 24rem; /* слева 24rem, вертикаль как у кнопки */
+
+  display: flex;
+  align-items: center; /* вертикальное выравнивание текста */
+}
+
+.A_DescriptionCard {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: 20rem;
+  line-height: 120%;
+  color: var(--text-main-color);
+}
+
+.A_Arrow {
+  background-image: url(images/51e2124c12ef5fa23317.svg);
+  width: 40rem;
+  height: 40rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.A_NavigationLogoBlack path {
+  display: block;
+  width: 8%;
+  fill: var(--main-black-color);
+}
+
+.A_NavigationLogo.article path {
+  display: block;
+  width: 8%;
+  fill: var(--main-black-color);
+}
+
+.A_NavigationLogo.article svg:hover path {
+  display: block;
+  width: 8%;
+  fill: var(--main-black-color);
+}
+
+/* main */
+.M_MenuList {
+  display: flex;
+  flex-direction: row;
+  gap: 48rem;
+}
+.M_Logo {
+  position: relative;
+  height: 100%;
+}
+.M_TitleLink {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48rem;
+}
+.M_RecipesCards {
+  background-color: var(--card-gray-color);
+  width: 540rem;
+  border-radius: 40rem;
+  padding: 20rem;
+  height: 556rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.M_RecipesCards h4,
+.M_RecipesCards span {
+  color: var(--main-black-color);
+}
+
+.M_RecipesCards.big {
+  width: 1100rem;
+  background-position: 100% 100%;
+  background-size: 65%;
+}
+
+.M_ArticleCard {
+  border-radius: 40rem;
+  padding: 20rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 530rem;
+}
+
+.M_ArticleCard.s {
+  width: 400rem;
+}
+.M_ArticleCard.m {
+  width: 540rem;
+}
+.M_ArticleCard.l {
+  width: 680rem;
+}
+.M_ArticleCard.xxl {
+  width: 1240rem;
+}
+
+/* main */
+.C_AboutCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20rem;
+  grid-row-gap: 20rem;
+}
+/* main */
+.W_Text_CardSmall {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.W_Text_Test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20rem;
+}
+
+.W_Test_Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32rem;
+}
+
+.W_Test_Container button {
+  width: 400rem;
+}
+
+.W_ArticleTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.W_ArticleText {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+
+.W_FooterWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* main */
+.O_AboutCardWide {
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: var(--main-pink-color);
+  background-image: url(images/f9ba41bef14bfa1d8bbf.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 530rem;
+  border-radius: 40rem;
+}
+.card-purple {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: var(--main-purple-color);
+}
+.card-green {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: var(--main-green-color);
+}
+.card-orange {
+  grid-area: 2 / 3 / 3 / 4;
+  background-color: var(--btn-basic-color);
+}
+.O_AboutCardSmall img {
+  height: 260rem;
+}
+.card-orange img {
+  height: 260rem;
+}
+
+.O_AboutCardSmall {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40rem;
+  padding: 40rem;
+}
+
+.O_TestBlock {
+  margin: 130rem;
+  display: flex;
+  background-color: var(--main-green-color);
+  justify-content: space-between;
+  padding: 52rem 146rem;
+  border-radius: 40rem;
+}
+.O_TestBlock img,
+.O_ContactBlock img {
+  width: 635rem;
+}
+
+.O_ContactBlock {
+  margin-top: 130rem;
+  display: flex;
+  background-color: var(--main-green-color);
+  justify-content: space-between;
+  padding: 80rem 130rem;
+}
+.O_RecipesCardsMain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 20rem;
+  grid-row-gap: 20rem;
+}
+
+.M_RecipesCards1 {
+  grid-area: 1 / 1 / 3 / 2;
+  background-color: var(--card-gray-color);
+  border-radius: 40rem;
+}
+.M_RecipesCards2 {
+  grid-area: 1 / 2 / 3 / 3;
+  background-color: var(--card-gray-color);
+  border-radius: 40rem;
+}
+.M_RecipesCards3 {
+  grid-area: 1 / 3 / 3 / 4;
+  background-color: var(--card-gray-color);
+  border-radius: 40rem;
+}
+.M_RecipesCards4 {
+  grid-area: 3 / 1 / 5 / 2;
+  background-color: var(--card-gray-color);
+  border-radius: 40rem;
+}
+.M_RecipesCards5 {
+  grid-area: 3 / 2 / 5 / 4;
+  background-color: var(--card-gray-color);
+  border-radius: 40rem;
+}
+.O_RecipesCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rem;
+  justify-content: center;
+}
+
+.O_RecipesCardsM {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rem;
+  justify-content: center;
+  margin-top: 48rem;
+}
+.O_ArticleCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rem;
+  justify-content: center;
+}
+
+.O_Footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+.O_Header.article a {
+  color: var(--main-black-color);
+}
+
+.O_Header.article a:hover {
+  color: var(--main-orange-color);
+}
+
+/* main */
+.S_HeaderMainScreen {
+  background-color: var(--main-green-color);
+  background-image: url(images/a6f67d89090e2024eadb.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 80%;
+  background-size: 60%;
+}
+.S_HeaderRecepiesScreen {
+  background-color: var(--main-light-green-color);
+  background-image: url(images/3168a44b532af854af37.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 80%;
+}
+.S_HeaderArticlesScreen {
+  background-color: var(--main-purple-color);
+  background-image: url(images/c6165551e89a717f04f2.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 50%;
+}
+
+.S_MainScreen {
+  padding: 130rem;
+  display: flex;
+  flex-direction: column;
+  gap: 44rem;
+}
+.S_AboutMainScreen {
+  display: flex;
+  flex-direction: column;
+  background: var(--secondary-green-color);
+  padding: 130rem;
+  gap: 120rem;
+}
+
+.S_RecipesMainScreen,
+.S_ArticlesMainScreen,
+.S_GuidesMainScreen {
+  padding: 0rem 130rem;
+}
+.S_RecipesMainScreen {
+  margin-top: 130rem;
+}
+
+.S_FooterMain {
+  width: 100%;
+  padding: 90rem 130rem;
+  background-color: var(--main-green-color);
+}
+
+.S_Footer {
+  width: 100%;
+  padding: 90rem 130rem;
+}
+.S_Footer p,
+.S_Footer a {
+  color: var(--main-black-color);
+}
+
+.S_Recipes {
+  background-color: var(--secondary-light-green-color);
+}
+
+.S_Articles {
+  background-color: var(--secondary-light-blue-color);
+}
+
+
+
+
+
+
+

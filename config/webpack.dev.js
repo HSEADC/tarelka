@@ -5,7 +5,7 @@ const { merge } = require('webpack-merge')
 module.exports = merge(common, {
   mode: 'development',
   output: {
-    path: path.resolve('.', 'dev_build')
+    path: path.resolve('.', 'docs')
   },
   devServer: {
     static: './dev_build'
