@@ -221,17 +221,37 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// универсальная функция
+function setImage(selector, src) {
+  const el = document.querySelector(selector);
+  if (el) el.src = src;
+}
+
+// ===== logo animation (есть на всех страницах) =====
 import banana from '../img/logoanimation/Banana.png';
-document.querySelector('.Q_LogoMove_Banana').src = banana;
-
 import kiwi from '../img/logoanimation/Kiwi.png';
-document.querySelector('.Q_LogoMove_Kiwi').src = kiwi;
-
 import strawberry from '../img/logoanimation/Strawberry.png';
-document.querySelector('.Q_LogoMove_Strawberry').src = strawberry;
-
 import strawberry1 from '../img/logoanimation/Strawberry1.png';
-document.querySelector('.Q_LogoMove_Strawberry1').src = strawberry1;
-
 import tomato from '../img/logoanimation/Tomato.png';
-document.querySelector('.Q_LogoMove_Tomato').src = tomato;
+
+setImage('.Q_LogoMove_Banana', banana);
+setImage('.Q_LogoMove_Kiwi', kiwi);
+setImage('.Q_LogoMove_Strawberry', strawberry);
+setImage('.Q_LogoMove_Strawberry1', strawberry1);
+setImage('.Q_LogoMove_Tomato', tomato);
+
+// ===== main screen (есть НЕ везде) =====
+import kiwiMain from '../img/cards/A_Fruits_MainScreen_Kiwi.svg';
+import peach from '../img/cards/A_Fruits_MainScreen_Peach.svg';
+import strawberryMain from '../img/cards/A_Fruits_MainScreen_Strawberry.svg';
+
+setImage('.A_Fruits_MainScreen_Kiwi', kiwiMain);
+setImage('.A_Fruits_MainScreen_Peach', peach);
+setImage('.A_Fruits_MainScreen_Strawberry', strawberryMain);
+
+// ===== patterns =====
+import patternKiwi from '../img/M_Pattern_MainScreen_Kiwi.svg';
+import patternTomato from '../img/M_Pattern_MainScreen_Tomato.svg';
+
+setImage('.A_Fruits_MainScreen_PatternKiwi', patternKiwi);
+setImage('.A_Fruits_MainScreen_PatternTomato', patternTomato);
