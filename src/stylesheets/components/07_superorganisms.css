@@ -59,6 +59,10 @@
   color: var(--main-black-color);
 }
 
+.S_Footer a:hover {
+    color: var(--main-orange-color);
+}
+
 .S_Recipes {
   background-color: var(--secondary-light-green-color);
 }

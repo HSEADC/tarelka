@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const card = document.createElement('a');
       card.classList.add('M_ArticleCard');
 
-      // 💥 размер карточки
+      //размер карточки
       if (size) {
         card.classList.add(size.toLowerCase());
         // например: s, m, l, xxl
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
       card.href = link;
       card.style.backgroundImage = `url(${img})`;
 
-      // 🔹 верх: тег + стрелка
+      // тег + стрелка
       const topRow = document.createElement('div');
       topRow.classList.add('W_ArticleTop');
 

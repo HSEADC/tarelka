@@ -123,3 +123,10 @@
 .O_Header.article a:hover {
   color: var(--main-orange-color);
 }
+
+.O_RecipesBlock {
+  display: flex;
+  width: 100%;
+  padding: 100rem 130rem 80rem 130rem;
+  justify-content: space-between;
+}

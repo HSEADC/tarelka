@@ -147,6 +147,9 @@
   fill: var(--btn-hover-color);
 }
 
+.Q_NavigationTelegram.white path{
+    fill: var(--text-main-color);
+}
 
 
 .Q_Recepie_Img {

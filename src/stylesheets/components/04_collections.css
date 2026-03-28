@@ -6,3 +6,11 @@
   grid-column-gap: 20rem;
   grid-row-gap: 20rem;
 }
+.C_ArticleTags{
+  display: flex;
+  gap: 8rem;
+}
+
+.C_ArticleTags.black span{
+  color: var(--main-black-color);
+}
