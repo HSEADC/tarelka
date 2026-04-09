@@ -245,7 +245,6 @@ import kiwiMain from '../img/cards/A_Fruits_MainScreen_Kiwi.svg';
 import peach from '../img/cards/A_Fruits_MainScreen_Peach.svg';
 import strawberryMain from '../img/cards/A_Fruits_MainScreen_Strawberry.svg';
 
-setImage('.A_Fruits_MainScreen_Kiwi', kiwiMain);
 setImage('.A_Fruits_MainScreen_Peach', peach);
 setImage('.A_Fruits_MainScreen_Strawberry', strawberryMain);
 
