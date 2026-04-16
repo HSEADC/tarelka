@@ -708,6 +708,9 @@ main {
   fill: var(--btn-hover-color);
 }
 
+.Q_NavigationTelegram.white path{
+    fill: var(--text-main-color);
+}
 
 
 .Q_Recepie_Img {
@@ -800,7 +803,7 @@ input {
 }
 
 .A_Arrow {
-  background-image: url(images/51e2124c12ef5fa23317.svg);
+  background-image: url(img/A_IconExtra.svg);
   width: 40rem;
   height: 40rem;
   background-size: cover;
@@ -823,7 +826,12 @@ input {
 .A_NavigationLogo.article svg:hover path {
   display: block;
   width: 8%;
-  fill: var(--main-black-color);
+  fill: var(--main-orange-color);
+}
+.A_TagRecipes {
+  background-color: #fefefe;
+  padding: 16rem 24rem;
+  border-radius: 30rem;
 }
 
 /* main */
@@ -898,6 +906,14 @@ input {
   grid-column-gap: 20rem;
   grid-row-gap: 20rem;
 }
+.C_ArticleTags{
+  display: flex;
+  gap: 8rem;
+}
+
+.C_ArticleTags.black span{
+  color: var(--main-black-color);
+}
 /* main */
 .W_Text_CardSmall {
   display: flex;
@@ -941,12 +957,39 @@ input {
   align-items: center;
   justify-content: space-between;
 }
+.W_TagTitleWrap {
+  display: flex;
+  gap: 50rem;
+}
+.W_ArticleTop span {
+  color: var(--main-black-color);
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.input-wrapper input {
+  padding-left: 35px; /* место под иконку */
+  height: 40px;
+}
+
+.input-wrapper .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+}
 
 /* main */
 .O_AboutCardWide {
   grid-area: 1 / 1 / 2 / 4;
   background-color: var(--main-pink-color);
-  background-image: url(images/f9ba41bef14bfa1d8bbf.svg);
+  background-image: url(img/AboutUsBigCard.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1068,24 +1111,31 @@ input {
   color: var(--main-orange-color);
 }
 
+.O_RecipesBlock {
+  display: flex;
+  width: 100%;
+  padding: 100rem 130rem 80rem 130rem;
+  justify-content: space-between;
+}
+
 /* main */
 .S_HeaderMainScreen {
   background-color: var(--main-green-color);
-  background-image: url(images/a6f67d89090e2024eadb.svg);
+  background-image: url(img/BgMainImage.svg);
   background-repeat: no-repeat;
   background-position: 100% 80%;
   background-size: 60%;
 }
 .S_HeaderRecepiesScreen {
   background-color: var(--main-light-green-color);
-  background-image: url(images/3168a44b532af854af37.svg);
+  background-image: url(img/BgRecipesImage.svg);
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-size: 80%;
 }
 .S_HeaderArticlesScreen {
   background-color: var(--main-purple-color);
-  background-image: url(images/c6165551e89a717f04f2.svg);
+  background-image: url(img/BgArticlesImage.svg);
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-size: 50%;
@@ -1127,6 +1177,10 @@ input {
 .S_Footer p,
 .S_Footer a {
   color: var(--main-black-color);
+}
+
+.S_Footer a:hover {
+    color: var(--main-orange-color);
 }
 
 .S_Recipes {

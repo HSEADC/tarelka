@@ -84,7 +84,7 @@ input {
 }
 
 .A_Arrow {
-  background-image: url(/src/img/A_IconExtra.svg);
+  background-image: url(../../img/A_IconExtra.svg);
   width: 40rem;
   height: 40rem;
   background-size: cover;
