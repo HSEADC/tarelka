@@ -227,31 +227,30 @@ document.addEventListener('DOMContentLoaded', () => {
 //   if (el) el.src = src
 // }
 
-// // ===== logo animation (есть на всех страницах) =====
-// import banana from '../img/logoanimation/Banana.png'
-// import kiwi from '../img/logoanimation/Kiwi.png'
-// import strawberry from '../img/logoanimation/Strawberry.png'
-// import strawberry1 from '../img/logoanimation/Strawberry1.png'
-// import tomato from '../img/logoanimation/Tomato.png'
+// ===== logo animation (есть на всех страницах) =====
+import banana from '../img/logoanimation/Banana.png'
+import kiwi from '../img/logoanimation/Kiwi.png'
+import strawberry from '../img/logoanimation/Strawberry.png'
+import strawberry1 from '../img/logoanimation/Strawberry1.png'
+import tomato from '../img/logoanimation/Tomato.png'
 
-// setImage('.Q_LogoMove_Banana', banana)
-// setImage('.Q_LogoMove_Kiwi', kiwi)
-// setImage('.Q_LogoMove_Strawberry', strawberry)
-// setImage('.Q_LogoMove_Strawberry1', strawberry1)
-// setImage('.Q_LogoMove_Tomato', tomato)
+setImage('.Q_LogoMove_Banana', banana)
+setImage('.Q_LogoMove_Kiwi', kiwi)
+setImage('.Q_LogoMove_Strawberry', strawberry)
+setImage('.Q_LogoMove_Strawberry1', strawberry1)
+setImage('.Q_LogoMove_Tomato', tomato)
 
-// // ===== main screen (есть НЕ везде) =====
-// // import kiwiMain from '../img/cards/A_Fruits_MainScreen_Kiwi.svg'
-// import peach from '../img/cards/A_Fruits_MainScreen_Peach.svg'
-// import strawberryMain from '../img/cards/A_Fruits_MainScreen_Strawberry.svg'
+// ===== main screen (есть НЕ везде) =====
+import kiwiMain from '../img/cards/A_Fruits_MainScreen_Kiwi.svg'
+import peach from '../img/cards/A_Fruits_MainScreen_Peach.svg'
+import strawberryMain from '../img/cards/A_Fruits_MainScreen_Strawberry.svg'
 
-// // setImage('.A_Fruits_MainScreen_Kiwi', kiwiMain);
-// setImage('.A_Fruits_MainScreen_Peach', peach)
-// setImage('.A_Fruits_MainScreen_Strawberry', strawberryMain)
+setImage('.A_Fruits_MainScreen_Peach', peach)
+setImage('.A_Fruits_MainScreen_Strawberry', strawberryMain)
 
-// // ===== patterns =====
-// import patternKiwi from '../img/M_Pattern_MainScreen_Kiwi.svg'
-// import patternTomato from '../img/M_Pattern_MainScreen_Tomato.svg'
+// ===== patterns =====
+import patternKiwi from '../img/M_Pattern_MainScreen_Kiwi.svg'
+import patternTomato from '../img/M_Pattern_MainScreen_Tomato.svg'
 
-// setImage('.A_Fruits_MainScreen_PatternKiwi', patternKiwi)
-// setImage('.A_Fruits_MainScreen_PatternTomato', patternTomato)
+setImage('.A_Fruits_MainScreen_PatternKiwi', patternKiwi)
+setImage('.A_Fruits_MainScreen_PatternTomato', patternTomato)
