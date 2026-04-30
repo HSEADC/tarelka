@@ -114,3 +114,27 @@ input {
   padding: 16rem 24rem;
   border-radius: 30rem;
 }
+.A_TagRecipes.breakfast.active,
+.A_TagRecipes.lunch.active,
+.A_TagRecipes.dinner.active {
+  background-color: var(--main-pink-color);
+  color: #fefefe;
+}
+
+.A_TagRecipes.meat.active,
+.A_TagRecipes.fish.active,
+.A_TagRecipes.bird.active {
+  background-color: var(--main-purple-color);
+  color: #fefefe;
+}
+
+.A_TagRecipes.vegetables.active,
+.A_TagRecipes.fruits.active {
+  background-color: var(--main-light-green-color);
+  color: #fefefe;
+}
+
+.A_TagRecipes.all.active {
+  background-color: var(--main-green-color);
+  color: #fefefe;
+}

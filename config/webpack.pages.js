@@ -15,6 +15,7 @@ const htmlPages = [
     'index',
     'basic',
   ]),
+  
   createPage(
     './src/pages/articles/article1.html',
     './pages/articles/article1.html',
@@ -35,14 +36,21 @@ const htmlPages = [
     './pages/articles/article4.html',
     ['index', 'basic'],
   ),
+  createPage(
+    './src/pages/reactbasics.html',
+    './pages/reactbasics.html',
+    ['reactbasics', 'basic'],
+  ),
 
   createPage('./src/pages/recepies.html', './pages/recepies.html', [
     'index',
     'basic',
+    'filterTags'
   ]),
   createPage('./src/pages/tests.html', './pages/tests.html', [
     'index',
     'basic',
+    
   ]),
   createPage('./src/pages/tests/test1.html', './pages/tests/test1.html', [
     'test1',

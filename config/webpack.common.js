@@ -8,7 +8,10 @@ module.exports = {
     index: './src/javascripts/index.js',
     test1: './src/javascripts/test1.js',
     test2: './src/javascripts/test2.js',
-    basic: './src/javascripts/basic.js'
+    basic: './src/javascripts/basic.js',
+    filterTags: './src/javascripts/filterTags.js',
+    reactbasics: './src/javascripts/reactbasics.jsx'
+
   },
   output: {
     path: path.resolve('.', 'docs'),
