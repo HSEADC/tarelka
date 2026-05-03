@@ -907,3 +907,263 @@ article {
 }
 
 
+
+
+
+
+
+
+
+
+.header_burger-btn {
+  display: none;
+  width: 32rem;
+  height: 32rem;
+  border: none;
+  border-radius: 100%;
+  background-color: #93ad49;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.header_burger-btn span {
+  position: absolute;
+  width: 16rem;
+  height: 2rem;
+  background-color: white;
+  left: 8rem;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.header_burger-btn span:nth-child(1) { transform: translateY(-5rem); }
+.header_burger-btn span:nth-child(2) { transform: translateY(0); }
+.header_burger-btn span:nth-child(3) { transform: translateY(5rem); }
+
+.header.open .header_burger-btn span:nth-child(2) {
+  opacity: 0;
+}
+.header.open .header_burger-btn span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+.header.open .header_burger-btn span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+
+
+.article-page {
+  padding: 60rem 0;
+}
+
+.article-container {
+  max-width: 1200rem;
+  margin: 0 auto;
+  padding: 0 40rem;
+}
+
+.article-intro {
+  display: flex;
+  gap: 40rem;
+  align-items: center;
+  margin-bottom: 60rem;
+}
+
+.article-text {
+  flex: 1;
+}
+
+.article-image {
+  flex: 1;
+  text-align: center;
+}
+.article-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.article-container h1 {
+  font-size: 140rem;
+  margin-bottom: 40rem;
+  line-height: 1.1;
+}
+
+.article-container .intro {
+  font-size: 28rem;
+  margin-bottom: 32rem;
+  line-height: 1.4;
+}
+
+.article-container h2 {
+  font-size: 48rem;
+  margin: 48rem 0 24rem;
+  line-height: 1.2;
+}
+
+.article-container p {
+  font-size: 20rem;
+  line-height: 1.5;
+  margin-bottom: 24rem;
+}
+
+.article-container ul {
+  list-style: disc;
+  margin-left: 40rem;
+  margin-bottom: 24rem;
+}
+
+.article-container li {
+  font-size: 20rem;
+  line-height: 1.5;
+  margin-bottom: 8rem;
+}
+
+.subscribe-block {
+  background-color: #f3f3f6;
+  border-radius: 40rem;
+  padding: 48rem;
+  margin: 80rem 0;
+  text-align: center;
+}
+
+.subscribe-block h3 {
+  font-size: 32rem;
+  margin-bottom: 24rem;
+  color: #3a3a3a;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 16rem;
+  flex-wrap: wrap;
+}
+
+.subscribe-form input {
+  width: 300rem;
+  padding: 15rem 20rem;
+  border: 1rem solid #dadae2;
+  border-radius: 100rem;
+  font-size: 16rem;
+}
+
+.subscribe-form button {
+  width: auto;
+  padding: 15rem 32rem;
+}
+
+.article-footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 48rem;
+  padding: 40rem 0;
+  border-top: 1px solid #dadae2;
+  margin-top: 40rem;
+}
+
+.article-footer-nav a {
+  font-size: 20rem;
+  color: #3a3a3a;
+  text-decoration: none;
+}
+.article-footer-nav a:hover {
+  color: #ed7d41;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .article-container {
+    padding: 0 30rem;
+  }
+  .article-container h1 {
+    font-size: 96rem;
+  }
+  .article-container h2 {
+    font-size: 40rem;
+  }
+  .article-container .intro {
+    font-size: 24rem;
+  }
+  .subscribe-block {
+    padding: 32rem;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .header_burger-btn {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background-color: #93ad49;
+    width: 100%;
+    height: 100%;
+    padding: 100rem 40rem;
+    transition: left 0.3s;
+    z-index: 1;
+  }
+  .header.open .menu {
+    left: 0;
+  }
+  .menu_list {
+    flex-direction: column;
+    gap: 20rem;
+  }
+  .menu_link {
+    color: white;
+    font-size: 24rem;
+  }
+  .headertg {
+    margin-left: auto;
+  }
+
+
+  .article-page {
+    padding: 40rem 0;
+  }
+  .article-container {
+    padding: 0 20rem;
+  }
+  .article-intro {
+    flex-direction: column;
+    gap: 30rem;
+  }
+  .article-container h1 {
+    font-size: 56rem;
+    margin-bottom: 24rem;
+  }
+  .article-container .intro {
+    font-size: 20rem;
+  }
+  .article-container h2 {
+    font-size: 32rem;
+    margin: 32rem 0 16rem;
+  }
+  .article-container p,
+  .article-container li {
+    font-size: 16rem;
+  }
+  .subscribe-block {
+    padding: 24rem;
+    margin: 48rem 0;
+  }
+  .subscribe-block h3 {
+    font-size: 24rem;
+  }
+  .subscribe-form input {
+    width: 100%;
+  }
+  .subscribe-form button {
+    width: 100%;
+  }
+  .article-footer-nav {
+    gap: 24rem;
+    flex-wrap: wrap;
+  }
+  .article-footer-nav a {
+    font-size: 16rem;
+  }
+}
+
