@@ -10,12 +10,12 @@ function createPage(template, filename, chunks) {
 
 const htmlPages = [
   createPage('./src/index1.html', './index1.html', ['index', 'basic']),
-
-  createPage('./src/index.html', './index.html', ['index', 'basic']),
+  createPage('./src/index.html', 'index.html', ['index', 'basic']),
   createPage('./src/pages/articles.html', './pages/articles.html', [
     'index',
     'basic',
   ]),
+  
   createPage(
     './src/pages/articles/article1.html',
     './pages/articles/article1.html',
@@ -36,14 +36,21 @@ const htmlPages = [
     './pages/articles/article4.html',
     ['index', 'basic'],
   ),
+  createPage(
+    './src/pages/reactbasics.html',
+    './pages/reactbasics.html',
+    ['reactbasics', 'basic'],
+  ),
 
   createPage('./src/pages/recepies.html', './pages/recepies.html', [
     'index',
     'basic',
+    'filterTags'
   ]),
   createPage('./src/pages/tests.html', './pages/tests.html', [
     'index',
     'basic',
+    
   ]),
   createPage('./src/pages/tests/test1.html', './pages/tests/test1.html', [
     'test1',

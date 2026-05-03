@@ -24,3 +24,47 @@
 .W_Test_Container button {
   width: 400rem;
 }
+
+.W_ArticleTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.W_ArticleText {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+
+.W_FooterWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.W_TagTitleWrap {
+  display: flex;
+  gap: 50rem;
+}
+.W_ArticleTop span {
+  color: var(--main-black-color);
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.input-wrapper input {
+  padding-left: 35px; /* место под иконку */
+  height: 40px;
+}
+
+.input-wrapper .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+}

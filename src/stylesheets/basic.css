@@ -29,12 +29,12 @@ h2 {
   line-height: 100%;
   color: var(--text-main-color);
 }
-h4{
-   font-family: 'Ubuntu';
+h4 {
+  font-family: 'Ubuntu';
   font-weight: 500;
   font-size: 32rem;
   line-height: 120%;
-  color: var(--text-main-color); 
+  color: var(--text-main-color);
 }
 h3 {
   font-family: 'Ubuntu';
@@ -62,8 +62,8 @@ label {
 a:hover {
   color: #ed7d41;
 }
-span{
-    font-family: 'Ubuntu';
+span {
+  font-family: 'Ubuntu';
   font-weight: 400;
   font-size: 16rem;
   line-height: 16rem;
@@ -113,4 +113,6 @@ main {
   --main-pink-color: #ea86d1;
   --main-black-color: #3a3a3a;
   --card-gray-color: #f3f3f6;
+  --secondary-light-blue-color: #e8e9ff;
+  --secondary-light-green-color: #dde7c1;
 }

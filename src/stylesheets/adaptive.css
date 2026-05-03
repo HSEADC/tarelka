@@ -222,4 +222,42 @@
   .footertg {
     width: 24rem;
   }
+
+  .M_RecipesCards {
+    width: 44%;
+  }
+  .M_RecipesCards.big {
+    background-position: top right;
+    width: 90%;
+  }
+  .M_RecipesCards:nth-of-type(n + 1):nth-of-type(-n + 8),
+  .M_RecipesCards:nth-of-type(10) {
+    order: 1;
+  }
+  .M_RecipesCards:nth-of-type(9) {
+    order: 2;
+  }
+  .M_RecipesCards:nth-of-type(n + 11):nth-of-type(-n + 14) {
+    order: 3;
+  }
+  .M_RecipesCards:nth-of-type(16) {
+    order: 4;
+  }
+  .M_RecipesCards:nth-of-type(15) {
+    order: 3;
+  }
+  .M_RecipesCards:nth-of-type(17),
+  .M_RecipesCards:nth-of-type(18),
+  .M_RecipesCards:nth-of-type(20) {
+    order: 5;
+  }
+  .M_RecipesCards:nth-of-type(19) {
+    order: 6;
+  }
+
+  #burger {
+    width: 40px;
+    height: 25px;
+    margin: 10rem;
+  }
 }

@@ -5,10 +5,10 @@ const { merge } = require('webpack-merge')
 module.exports = merge(common, {
   mode: 'development',
   output: {
-    path: path.resolve('.', 'dev_build')
+    path: path.resolve('.', 'dev-build')
   },
   devServer: {
-    static: './dev_build'
+    static: './dev-build'
   },
   devtool: 'inline-source-map'
 })

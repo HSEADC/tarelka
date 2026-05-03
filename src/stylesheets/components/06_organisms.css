@@ -55,7 +55,7 @@
   display: flex;
   background-color: var(--main-green-color);
   justify-content: space-between;
-  padding: 80rem 150rem;
+  padding: 80rem 130rem;
 }
 .O_RecipesCardsMain {
   display: grid;
@@ -103,4 +103,30 @@
   gap: 20rem;
   justify-content: center;
   margin-top: 48rem;
+}
+.O_ArticleCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rem;
+  justify-content: center;
+}
+
+.O_Footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+.O_Header.article a {
+  color: var(--main-black-color);
+}
+
+.O_Header.article a:hover {
+  color: var(--main-orange-color);
+}
+
+.O_RecipesBlock {
+  display: flex;
+  width: 100%;
+  padding: 100rem 130rem 80rem 130rem;
+  justify-content: space-between;
 }
