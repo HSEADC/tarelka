@@ -1,0 +1,140 @@
+/* main */
+.A_NavigationLogo path {
+  display: block;
+  width: 8%;
+  fill: white;
+}
+.A_NavigationLogo {
+  z-index: 1000;
+}
+.A_NavigationLogo svg:hover path {
+  fill: white;
+}
+.A_MenuLink.active {
+  color: var(--menu-hover-color);
+}
+.A_Button_Primary {
+  background-color: var(--btn-basic-color);
+  border-radius: 100rem;
+  border: none;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 20rem;
+  line-height: 100%;
+  color: var(--text-main-color);
+  padding: 20rem 107rem;
+  cursor: pointer;
+  display: inline-block;
+}
+.button_hero {
+  width: 400rem;
+}
+.A_Button_Primary:hover {
+  background-color: var(--btn-hover-color);
+}
+.A_TitleSection_About {
+  text-align: center;
+}
+.A_TitleSection_CardWide {
+  margin: 112rem 0 20rem 160rem;
+  width: 555rem;
+  line-height: 100%;
+}
+.A_Subtitle__CardWide {
+  margin-left: 160rem;
+  width: 632rem;
+}
+
+.A_Subtitle__CardSmall {
+  text-align: center;
+}
+.A_TitleSection_Black {
+  color: var(--main-black-color);
+}
+.A_Form_Input {
+  display: flex;
+  gap: 12rem;
+}
+input {
+  width: 421rem;
+  height: auto;
+
+  background-color: #fefefe;
+  border: 1rem solid #dadae2;
+  border-radius: 100rem;
+
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 100%;
+  color: #000; /* можно поменять */
+
+  padding: 20rem 24rem; /* слева 24rem, вертикаль как у кнопки */
+
+  display: flex;
+  align-items: center; /* вертикальное выравнивание текста */
+}
+
+.A_DescriptionCard {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: 20rem;
+  line-height: 120%;
+  color: var(--text-main-color);
+}
+
+.A_Arrow {
+  background-image: url(../../img/A_IconExtra.svg);
+  width: 40rem;
+  height: 40rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.A_NavigationLogoBlack path {
+  display: block;
+  width: 8%;
+  fill: var(--main-black-color);
+}
+
+.A_NavigationLogo.article path {
+  display: block;
+  width: 8%;
+  fill: var(--main-black-color);
+}
+
+.A_NavigationLogo.article svg:hover path {
+  display: block;
+  width: 8%;
+  fill: var(--main-orange-color);
+}
+.A_TagRecipes {
+  background-color: #fefefe;
+  padding: 16rem 24rem;
+  border-radius: 30rem;
+}
+.A_TagRecipes.breakfast.active,
+.A_TagRecipes.lunch.active,
+.A_TagRecipes.dinner.active {
+  background-color: var(--main-pink-color);
+  color: #fefefe;
+}
+
+.A_TagRecipes.meat.active,
+.A_TagRecipes.fish.active,
+.A_TagRecipes.bird.active {
+  background-color: var(--main-purple-color);
+  color: #fefefe;
+}
+
+.A_TagRecipes.vegetables.active,
+.A_TagRecipes.fruits.active {
+  background-color: var(--main-light-green-color);
+  color: #fefefe;
+}
+
+.A_TagRecipes.all.active {
+  background-color: var(--main-green-color);
+  color: #fefefe;
+}

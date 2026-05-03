@@ -1,0 +1,63 @@
+/* main */
+.M_MenuList {
+  display: flex;
+  flex-direction: row;
+  gap: 48rem;
+}
+.M_Logo {
+  position: relative;
+  height: 100%;
+}
+.M_TitleLink {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48rem;
+}
+.M_RecipesCards {
+  background-color: var(--card-gray-color);
+  width: 540rem;
+  border-radius: 40rem;
+  padding: 20rem;
+  height: 556rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.M_RecipesCards h4,
+.M_RecipesCards span {
+  color: var(--main-black-color);
+}
+
+.M_RecipesCards.big {
+  width: 1100rem;
+  background-position: 100% 100%;
+  background-size: 65%;
+}
+
+.M_ArticleCard {
+  border-radius: 40rem;
+  padding: 20rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 530rem;
+}
+
+.M_ArticleCard.s {
+  width: 400rem;
+}
+.M_ArticleCard.m {
+  width: 540rem;
+}
+.M_ArticleCard.l {
+  width: 680rem;
+}
+.M_ArticleCard.xxl {
+  width: 1240rem;
+}

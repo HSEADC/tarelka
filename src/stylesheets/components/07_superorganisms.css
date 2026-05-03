@@ -1,0 +1,72 @@
+/* main */
+.S_HeaderMainScreen {
+  background-color: var(--main-green-color);
+  background-image: url(/src/img/BgMainImage.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 80%;
+  background-size: 60%;
+}
+.S_HeaderRecepiesScreen {
+  background-color: var(--main-light-green-color);
+  background-image: url(/src/img/BgRecipesImage.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 80%;
+}
+.S_HeaderArticlesScreen {
+  background-color: var(--main-purple-color);
+  background-image: url(/src/img/BgArticlesImage.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 50%;
+}
+
+.S_MainScreen {
+  padding: 130rem;
+  display: flex;
+  flex-direction: column;
+  gap: 44rem;
+}
+.S_AboutMainScreen {
+  display: flex;
+  flex-direction: column;
+  background: var(--secondary-green-color);
+  padding: 130rem;
+  gap: 120rem;
+}
+
+.S_RecipesMainScreen,
+.S_ArticlesMainScreen,
+.S_GuidesMainScreen {
+  padding: 0rem 130rem;
+}
+.S_RecipesMainScreen {
+  margin-top: 130rem;
+}
+
+.S_FooterMain {
+  width: 100%;
+  padding: 90rem 130rem;
+  background-color: var(--main-green-color);
+}
+
+.S_Footer {
+  width: 100%;
+  padding: 90rem 130rem;
+}
+.S_Footer p,
+.S_Footer a {
+  color: var(--main-black-color);
+}
+
+.S_Footer a:hover {
+    color: var(--main-orange-color);
+}
+
+.S_Recipes {
+  background-color: var(--secondary-light-green-color);
+}
+
+.S_Articles {
+  background-color: var(--secondary-light-blue-color);
+}
