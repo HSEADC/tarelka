@@ -14,3 +14,13 @@ function animation_logo() {
     }, 610);
   });
 }
+
+burgerMenu()
+
+function burgerMenu(){
+  let burger = document.querySelector('#burger')
+
+  burger.addEventListener('click', () =>{
+    burger.classList.toggle('active')
+  })
+}

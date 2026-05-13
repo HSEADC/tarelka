@@ -256,8 +256,75 @@
   }
 
   #burger {
-    width: 40px;
-    height: 25px;
-    margin: 10rem;
+    width: 40rem;
+    height: 40rem;
+    margin-right: 10rem;
+    margin-left: 340rem;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+    background-color: var(--main-orange-color);
+    border-radius: 100rem;
+  }
+  #burger::before,
+  #burger::after {
+    content: '';
+    position: absolute;
+    margin-top: 18rem;
+    left: 12rem;
+    width: 16rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: 10rem;
+    transition: transform ease 0.8s;
+  }
+  #burger::after {
+    margin-top: 14rem;
+  }
+  #burger::before {
+    box-shadow: 0 4rem white;
+  }
+  #burger.active::before {
+    box-shadow: 0 0rem white;
+    margin-top: 20rem;
+    transform: rotate(45deg);
+  }
+  #burger.active::after {
+    margin-top: 20rem;
+    transform: rotate(-45deg);
+  }
+  .O_Header {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: var(--main-green-color);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0rem;
+    gap: 50rem;
+    padding-left: 20rem;
+    transform: translateX(-100%);
+  }
+
+  .M_MenuList {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    align-items: flex-start;
+  }
+
+  .M_Logo {
+    margin-top: 10rem;
+    height: 45rem;
+  }
+  .Q_NavigationTelegram {
+    display: none;
+  }
+  #burger.active + .O_Header {
+    transform: translateX(0);
   }
 }

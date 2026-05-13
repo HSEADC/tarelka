@@ -2,7 +2,6 @@
 @import 'fonts.css';
 @import 'basic.css';
 
-@import 'adaptive.css';
 @import 'animation.css';
 
 @import 'components/01_quarks.css';
@@ -13,6 +12,4 @@
 @import 'components/06_organisms.css';
 @import 'components/07_superorganisms.css';
 
-
-
-
+@import 'adaptive.css';
