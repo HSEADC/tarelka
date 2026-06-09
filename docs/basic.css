@@ -331,233 +331,9 @@ main {
   --card-gray-color: #f3f3f6;
   --secondary-light-blue-color: #e8e9ff;
   --secondary-light-green-color: #dde7c1;
+  --secondary-light-pink-color: #ffdef7;
 }
 
-@media screen and (max-width: 600px) {
-  html {
-    font-size: calc(1vw / 3.93);
-  }
-  #indexWrapper {
-    width: calc(100% - 32rem);
-    margin-top: 50rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    gap: 50rem;
-  }
-
-  .indexContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 62rem;
-  }
-
-  .indexContainerInfoTags {
-    display: none;
-  }
-
-  .indexContainerInfo,
-  .indexContainerBottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20rem;
-    width: 361rem;
-  }
-  .indexContainerBottom {
-    height: 255rem;
-  }
-
-  .indexContainerInfoText h1 {
-    font-weight: 500;
-    font-style: normal;
-    font-size: 40rem;
-    text-align: left;
-    line-height: 44rem;
-    margin-bottom: 8rem;
-  }
-
-  .indexContainerBottomText h1 {
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32rem;
-    text-align: left;
-    line-height: 36rem;
-    margin-bottom: 8rem;
-  }
-  .indexContainerInfoText h2,
-  .indexContainerBottomText h2 {
-    font-weight: 300;
-    font-style: normal;
-    font-size: 16rem;
-    text-align: left;
-    line-height: 19.8rem;
-  }
-
-  #index form input {
-    height: 40rem;
-    border-radius: 30rem;
-    background-color: #fefefe;
-    border: solid 1rem #dadae2;
-    padding: 0 20rem;
-  }
-  .my-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 361rem;
-    gap: 10rem;
-  }
-  #my-form-button {
-    height: 40rem;
-    border-radius: 30rem;
-    background-color: #f48e28;
-    border: solid;
-    color: #fefefe;
-    cursor: pointer;
-  }
-  .indexContainer > div,
-  .indexContainerBottom > div,
-  .footer > div {
-    width: 100%;
-  }
-
-  .indexContainerDescription {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    height: 826rem;
-    justify-content: left;
-    gap: 20rem;
-  }
-
-  .indexContainerDescriptionText {
-    font-weight: 400;
-    font-style: normal;
-    width: 361rem;
-    font-size: 24rem;
-    text-align: left;
-    line-height: 29rem;
-  }
-  .indexContainerDescriptionCards {
-    display: flex;
-    flex-direction: column;
-    width: 361rem;
-    gap: 20rem;
-  }
-  .Card {
-    display: flex;
-    flex-direction: column;
-    gap: 32rem;
-    height: 236rem;
-    width: 361rem;
-    padding-left: 16rem;
-    padding-bottom: 16rem;
-    padding-top: 16rem;
-  }
-  .Card h1 {
-    font-weight: 400;
-    font-size: 56rem;
-    line-height: 64rem;
-  }
-  .CardText {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 108rem;
-  }
-  .CardText h3 {
-    font-size: 14rem;
-    line-height: 16rem;
-  }
-  .indexContainerAbout {
-    justify-content: left;
-    height: 1480rem;
-  }
-  .indexContainerAboutCards {
-    flex-direction: column;
-  }
-  .Card.first {
-    display: flex;
-    flex-direction: column;
-    gap: 45rem;
-    height: 350rem;
-    width: 361rem;
-    justify-content: center;
-    padding-left: 16rem;
-    border-radius: 30rem;
-    padding-bottom: 16rem;
-  }
-  .CardText.first {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 16rem;
-    height: 172rem;
-  }
-  .CardWrapper {
-    display: flex;
-    flex-direction: column;
-    width: 361rem;
-    gap: 20rem;
-  }
-  .CardText.first h2 {
-    font-size: 40rem;
-    line-height: 46rem;
-  }
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 361rem;
-    align-items: center;
-  }
-  .headertg {
-    width: 32rem;
-    margin-left: 0rem;
-  }
-  .headerlogo {
-    width: 109rem;
-  }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    width: 361rem;
-    justify-content: space-between;
-    margin-bottom: 50rem;
-    gap: 50rem;
-  }
-  .footer p {
-    text-align: left;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14rem;
-    line-height: 20rem;
-  }
-  .footer h1 {
-    text-align: left;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 22rem;
-    line-height: 28.8rem;
-    color: #f48e28;
-  }
-  .footercolumn {
-    display: flex;
-    flex-direction: column;
-    gap: 20rem;
-  }
-  .telegramfooter {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8rem;
-  }
-  .footertg {
-    width: 24rem;
-  }
-}
 
 /* main */
 .Q_LogoMove_Banana,
@@ -833,6 +609,30 @@ input {
   padding: 16rem 24rem;
   border-radius: 30rem;
 }
+.A_TagRecipes.breakfast.active,
+.A_TagRecipes.lunch.active,
+.A_TagRecipes.dinner.active {
+  background-color: var(--main-pink-color);
+  color: #fefefe;
+}
+
+.A_TagRecipes.meat.active,
+.A_TagRecipes.fish.active,
+.A_TagRecipes.bird.active {
+  background-color: var(--main-purple-color);
+  color: #fefefe;
+}
+
+.A_TagRecipes.vegetables.active,
+.A_TagRecipes.fruits.active {
+  background-color: var(--main-light-green-color);
+  color: #fefefe;
+}
+
+.A_TagRecipes.all.active {
+  background-color: var(--main-green-color);
+  color: #fefefe;
+}
 
 /* main */
 .M_MenuList {
@@ -842,7 +642,6 @@ input {
 }
 .M_Logo {
   position: relative;
-  height: 100%;
 }
 .M_TitleLink {
   display: flex;
@@ -906,14 +705,16 @@ input {
   grid-column-gap: 20rem;
   grid-row-gap: 20rem;
 }
-.C_ArticleTags{
+.C_ArticleTags {
   display: flex;
+  flex-wrap: wrap;
   gap: 8rem;
 }
 
-.C_ArticleTags.black span{
+.C_ArticleTags.black span {
   color: var(--main-black-color);
 }
+
 /* main */
 .W_Text_CardSmall {
   display: flex;
@@ -1117,6 +918,45 @@ input {
   padding: 100rem 130rem 80rem 130rem;
   justify-content: space-between;
 }
+.O_TestBlock.small1 {
+  margin: 0rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-pink-color);
+  background-image: url(img/M_PreTestCards1.svg);
+  background-position: 50%;
+    background-size: contain;
+  justify-content: flex-end;
+  padding: 24rem 24rem;
+  border-radius: 40rem;
+  width: 400rem;
+}
+.O_TestBlock.small2 {
+  margin: 0rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-green-color);
+  background-image: url(img/M_PreTestCards2.svg);
+  background-size: contain;
+  background-position: 50%;
+  justify-content: flex-end;
+  padding: 24rem 24rem;
+  border-radius: 40rem;
+  width: 400rem;
+}
+.O_TestBlock.big {
+  margin: 0rem;
+  display: flex;
+  flex-direction: column;
+  background-image: url(img/M_PreTestCards.svg);
+  background-position: 50%;
+    background-size: contain;
+  justify-content: flex-end;
+  padding: 24rem 24rem;
+  border-radius: 40rem;
+  width: 820rem;
+  height: 550rem;
+}
 
 /* main */
 .S_HeaderMainScreen {
@@ -1125,6 +965,15 @@ input {
   background-repeat: no-repeat;
   background-position: 100% 80%;
   background-size: 60%;
+}
+.S_HeaderTestsScreen {
+  background-color: var(--main-pink-color);
+  background-image: url(img/BgTestsImage.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  background-size: 60%;
+  margin-bottom: 100rem;
+  
 }
 .S_HeaderRecepiesScreen {
   background-color: var(--main-light-green-color);
@@ -1157,13 +1006,17 @@ input {
 
 .S_RecipesMainScreen,
 .S_ArticlesMainScreen,
-.S_GuidesMainScreen {
+.S_GuidesMainScreen,
+.S_TestsMainScreen {
   padding: 0rem 130rem;
 }
 .S_RecipesMainScreen {
   margin-top: 130rem;
 }
-
+.O_TestBlock.main {
+  margin: 0;
+  background-color: var(--main-purple-color);
+}
 .S_FooterMain {
   width: 100%;
   padding: 90rem 130rem;
@@ -1180,7 +1033,7 @@ input {
 }
 
 .S_Footer a:hover {
-    color: var(--main-orange-color);
+  color: var(--main-orange-color);
 }
 
 .S_Recipes {
@@ -1191,269 +1044,347 @@ input {
   background-color: var(--secondary-light-blue-color);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.header_burger-btn {
-  display: none;
-  width: 32rem;
-  height: 32rem;
-  border: none;
-  border-radius: 100%;
-  background-color: #93ad49;
-  position: relative;
-  z-index: 2;
-  cursor: pointer;
-  flex-shrink: 0;
-}
-.header_burger-btn span {
-  position: absolute;
-  width: 16rem;
-  height: 2rem;
-  background-color: white;
-  left: 8rem;
-  transition: transform 0.3s, opacity 0.3s;
-}
-.header_burger-btn span:nth-child(1) { transform: translateY(-5rem); }
-.header_burger-btn span:nth-child(2) { transform: translateY(0); }
-.header_burger-btn span:nth-child(3) { transform: translateY(5rem); }
-
-.header.open .header_burger-btn span:nth-child(2) {
-  opacity: 0;
-}
-.header.open .header_burger-btn span:nth-child(1) {
-  transform: translateY(0) rotate(45deg);
-}
-.header.open .header_burger-btn span:nth-child(3) {
-  transform: translateY(0) rotate(-45deg);
-}
-
-
-.article-page {
-  padding: 60rem 0;
-}
-
-.article-container {
-  max-width: 1200rem;
-  margin: 0 auto;
-  padding: 0 40rem;
-}
-
-.article-intro {
+.S_TestsMainScreen {
   display: flex;
-  gap: 40rem;
-  align-items: center;
-  margin-bottom: 60rem;
-}
-
-.article-text {
-  flex: 1;
-}
-
-.article-image {
-  flex: 1;
-  text-align: center;
-}
-.article-image img {
-  max-width: 100%;
-  height: auto;
-}
-
-.article-container h1 {
-  font-size: 140rem;
-  margin-bottom: 40rem;
-  line-height: 1.1;
-}
-
-.article-container .intro {
-  font-size: 28rem;
-  margin-bottom: 32rem;
-  line-height: 1.4;
-}
-
-.article-container h2 {
-  font-size: 48rem;
-  margin: 48rem 0 24rem;
-  line-height: 1.2;
-}
-
-.article-container p {
-  font-size: 20rem;
-  line-height: 1.5;
-  margin-bottom: 24rem;
-}
-
-.article-container ul {
-  list-style: disc;
-  margin-left: 40rem;
-  margin-bottom: 24rem;
-}
-
-.article-container li {
-  font-size: 20rem;
-  line-height: 1.5;
-  margin-bottom: 8rem;
-}
-
-.subscribe-block {
-  background-color: #f3f3f6;
-  border-radius: 40rem;
-  padding: 48rem;
-  margin: 80rem 0;
-  text-align: center;
-}
-
-.subscribe-block h3 {
-  font-size: 32rem;
-  margin-bottom: 24rem;
-  color: #3a3a3a;
-}
-
-.subscribe-form {
-  display: flex;
-  justify-content: center;
-  gap: 16rem;
   flex-wrap: wrap;
+  gap: 20rem;
+  
 }
 
-.subscribe-form input {
-  width: 300rem;
-  padding: 15rem 20rem;
-  border: 1rem solid #dadae2;
-  border-radius: 100rem;
-  font-size: 16rem;
+.S_Tests {
+  background-color: var(--secondary-light-pink-color);
 }
-
-.subscribe-form button {
-  width: auto;
-  padding: 15rem 32rem;
-}
-
-.article-footer-nav {
-  display: flex;
-  justify-content: center;
-  gap: 48rem;
-  padding: 40rem 0;
-  border-top: 1px solid #dadae2;
-  margin-top: 40rem;
-}
-
-.article-footer-nav a {
-  font-size: 20rem;
-  color: #3a3a3a;
-  text-decoration: none;
-}
-.article-footer-nav a:hover {
-  color: #ed7d41;
-}
-
-
-@media screen and (max-width: 1024px) {
-  .article-container {
-    padding: 0 30rem;
-  }
-  .article-container h1 {
-    font-size: 96rem;
-  }
-  .article-container h2 {
-    font-size: 40rem;
-  }
-  .article-container .intro {
-    font-size: 24rem;
-  }
-  .subscribe-block {
-    padding: 32rem;
-  }
-}
-
 
 @media screen and (max-width: 600px) {
+  html {
+    font-size: calc(1vw / 3.93);
+  }
+  #indexWrapper {
+    width: calc(100% - 32rem);
+    margin-top: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 50rem;
+  }
 
-  .header_burger-btn {
-    display: block;
+  .indexContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 62rem;
   }
-  .menu {
-    position: fixed;
-    left: -100%;
-    top: 0;
-    background-color: #93ad49;
+
+  .indexContainerInfoTags {
+    display: none;
+  }
+
+  .indexContainerInfo,
+  .indexContainerBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20rem;
+    width: 361rem;
+  }
+  .indexContainerBottom {
+    height: 255rem;
+  }
+
+  .indexContainerInfoText h1 {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40rem;
+    text-align: left;
+    line-height: 44rem;
+    margin-bottom: 8rem;
+  }
+
+  .indexContainerBottomText h1 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32rem;
+    text-align: left;
+    line-height: 36rem;
+    margin-bottom: 8rem;
+  }
+  .indexContainerInfoText h2,
+  .indexContainerBottomText h2 {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16rem;
+    text-align: left;
+    line-height: 19.8rem;
+  }
+
+  #index form input {
+    height: 40rem;
+    border-radius: 30rem;
+    background-color: #fefefe;
+    border: solid 1rem #dadae2;
+    padding: 0 20rem;
+  }
+  .my-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 361rem;
+    gap: 10rem;
+  }
+  #my-form-button {
+    height: 40rem;
+    border-radius: 30rem;
+    background-color: #f48e28;
+    border: solid;
+    color: #fefefe;
+    cursor: pointer;
+  }
+  .indexContainer > div,
+  .indexContainerBottom > div,
+  .footer > div {
     width: 100%;
-    height: 100%;
-    padding: 100rem 40rem;
-    transition: left 0.3s;
-    z-index: 1;
   }
-  .header.open .menu {
-    left: 0;
+
+  .indexContainerDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 826rem;
+    justify-content: left;
+    gap: 20rem;
   }
-  .menu_list {
+
+  .indexContainerDescriptionText {
+    font-weight: 400;
+    font-style: normal;
+    width: 361rem;
+    font-size: 24rem;
+    text-align: left;
+    line-height: 29rem;
+  }
+  .indexContainerDescriptionCards {
+    display: flex;
+    flex-direction: column;
+    width: 361rem;
+    gap: 20rem;
+  }
+  .Card {
+    display: flex;
+    flex-direction: column;
+    gap: 32rem;
+    height: 236rem;
+    width: 361rem;
+    padding-left: 16rem;
+    padding-bottom: 16rem;
+    padding-top: 16rem;
+  }
+  .Card h1 {
+    font-weight: 400;
+    font-size: 56rem;
+    line-height: 64rem;
+  }
+  .CardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 108rem;
+  }
+  .CardText h3 {
+    font-size: 14rem;
+    line-height: 16rem;
+  }
+  .indexContainerAbout {
+    justify-content: left;
+    height: 1480rem;
+  }
+  .indexContainerAboutCards {
+    flex-direction: column;
+  }
+  .Card.first {
+    display: flex;
+    flex-direction: column;
+    gap: 45rem;
+    height: 350rem;
+    width: 361rem;
+    justify-content: center;
+    padding-left: 16rem;
+    border-radius: 30rem;
+    padding-bottom: 16rem;
+  }
+  .CardText.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16rem;
+    height: 172rem;
+  }
+  .CardWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 361rem;
+    gap: 20rem;
+  }
+  .CardText.first h2 {
+    font-size: 40rem;
+    line-height: 46rem;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 361rem;
+    align-items: center;
+  }
+  .headertg {
+    width: 32rem;
+    margin-left: 0rem;
+  }
+  .headerlogo {
+    width: 109rem;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 361rem;
+    justify-content: space-between;
+    margin-bottom: 50rem;
+    gap: 50rem;
+  }
+  .footer p {
+    text-align: left;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14rem;
+    line-height: 20rem;
+  }
+  .footer h1 {
+    text-align: left;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22rem;
+    line-height: 28.8rem;
+    color: #f48e28;
+  }
+  .footercolumn {
+    display: flex;
     flex-direction: column;
     gap: 20rem;
   }
-  .menu_link {
-    color: white;
-    font-size: 24rem;
+  .telegramfooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8rem;
   }
-  .headertg {
-    margin-left: auto;
+  .footertg {
+    width: 24rem;
   }
 
+  .M_RecipesCards {
+    width: 44%;
+  }
+  .M_RecipesCards.big {
+    background-position: top right;
+    width: 90%;
+  }
+  .M_RecipesCards:nth-of-type(n + 1):nth-of-type(-n + 8),
+  .M_RecipesCards:nth-of-type(10) {
+    order: 1;
+  }
+  .M_RecipesCards:nth-of-type(9) {
+    order: 2;
+  }
+  .M_RecipesCards:nth-of-type(n + 11):nth-of-type(-n + 14) {
+    order: 3;
+  }
+  .M_RecipesCards:nth-of-type(16) {
+    order: 4;
+  }
+  .M_RecipesCards:nth-of-type(15) {
+    order: 3;
+  }
+  .M_RecipesCards:nth-of-type(17),
+  .M_RecipesCards:nth-of-type(18),
+  .M_RecipesCards:nth-of-type(20) {
+    order: 5;
+  }
+  .M_RecipesCards:nth-of-type(19) {
+    order: 6;
+  }
 
-  .article-page {
-    padding: 40rem 0;
+  #burger {
+    width: 40rem;
+    height: 40rem;
+    margin-right: 10rem;
+    margin-left: 340rem;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+    background-color: var(--main-orange-color);
+    border-radius: 100rem;
   }
-  .article-container {
-    padding: 0 20rem;
+  #burger::before,
+  #burger::after {
+    content: '';
+    position: absolute;
+    margin-top: 18rem;
+    left: 12rem;
+    width: 16rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: 10rem;
+    transition: transform ease 0.8s;
   }
-  .article-intro {
+  #burger::after {
+    margin-top: 14rem;
+  }
+  #burger::before {
+    box-shadow: 0 4rem white;
+  }
+  #burger.active::before {
+    box-shadow: 0 0rem white;
+    margin-top: 20rem;
+    transform: rotate(45deg);
+  }
+  #burger.active::after {
+    margin-top: 20rem;
+    transform: rotate(-45deg);
+  }
+  .O_Header {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: var(--main-green-color);
     flex-direction: column;
-    gap: 30rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0rem;
+    gap: 50rem;
+    padding-left: 20rem;
+    transform: translateX(-100%);
   }
-  .article-container h1 {
-    font-size: 56rem;
-    margin-bottom: 24rem;
+
+  .M_MenuList {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    align-items: flex-start;
   }
-  .article-container .intro {
-    font-size: 20rem;
+
+  .M_Logo {
+    margin-top: 10rem;
+    height: 45rem;
   }
-  .article-container h2 {
-    font-size: 32rem;
-    margin: 32rem 0 16rem;
+  .Q_NavigationTelegram {
+    display: none;
   }
-  .article-container p,
-  .article-container li {
-    font-size: 16rem;
-  }
-  .subscribe-block {
-    padding: 24rem;
-    margin: 48rem 0;
-  }
-  .subscribe-block h3 {
-    font-size: 24rem;
-  }
-  .subscribe-form input {
-    width: 100%;
-  }
-  .subscribe-form button {
-    width: 100%;
-  }
-  .article-footer-nav {
-    gap: 24rem;
-    flex-wrap: wrap;
-  }
-  .article-footer-nav a {
-    font-size: 16rem;
+  #burger.active + .O_Header {
+    transform: translateX(0);
   }
 }
+
+
 

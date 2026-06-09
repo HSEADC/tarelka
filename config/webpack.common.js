@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const htmlPages = require('./webpack.pages.js')
 const CopyPlugin = require('copy-webpack-plugin')
 
+
 module.exports = {
   entry: {
     index: './src/javascripts/index.js',
@@ -59,6 +60,14 @@ module.exports = {
   plugins: [
     ...htmlPages,
     new MiniCssExtractPlugin(),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, '../src/share/CNAME'),
+          to: path.resolve(__dirname, '../docs')
+        }
+      ]
+    }),
     new CopyPlugin({
       patterns: [
         {
