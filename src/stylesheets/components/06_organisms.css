@@ -130,3 +130,42 @@
   padding: 100rem 130rem 80rem 130rem;
   justify-content: space-between;
 }
+.O_TestBlock.small1 {
+  margin: 0rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-pink-color);
+  background-image: url(/src/img/M_PreTestCards1.svg);
+  background-position: 50%;
+    background-size: contain;
+  justify-content: flex-end;
+  padding: 24rem 24rem;
+  border-radius: 40rem;
+  width: 400rem;
+}
+.O_TestBlock.small2 {
+  margin: 0rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-green-color);
+  background-image: url(/src/img/M_PreTestCards2.svg);
+  background-size: contain;
+  background-position: 50%;
+  justify-content: flex-end;
+  padding: 24rem 24rem;
+  border-radius: 40rem;
+  width: 400rem;
+}
+.O_TestBlock.big {
+  margin: 0rem;
+  display: flex;
+  flex-direction: column;
+  background-image: url(/src/img/M_PreTestCards.svg);
+  background-position: 50%;
+    background-size: contain;
+  justify-content: flex-end;
+  padding: 24rem 24rem;
+  border-radius: 40rem;
+  width: 820rem;
+  height: 550rem;
+}

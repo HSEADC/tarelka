@@ -6,6 +6,15 @@
   background-position: 100% 80%;
   background-size: 60%;
 }
+.S_HeaderTestsScreen {
+  background-color: var(--main-pink-color);
+  background-image: url(/src/img/BgTestsImage.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  background-size: 60%;
+  margin-bottom: 100rem;
+  
+}
 .S_HeaderRecepiesScreen {
   background-color: var(--main-light-green-color);
   background-image: url(/src/img/BgRecipesImage.svg);
@@ -37,13 +46,17 @@
 
 .S_RecipesMainScreen,
 .S_ArticlesMainScreen,
-.S_GuidesMainScreen {
+.S_GuidesMainScreen,
+.S_TestsMainScreen {
   padding: 0rem 130rem;
 }
 .S_RecipesMainScreen {
   margin-top: 130rem;
 }
-
+.O_TestBlock.main {
+  margin: 0;
+  background-color: var(--main-purple-color);
+}
 .S_FooterMain {
   width: 100%;
   padding: 90rem 130rem;
@@ -60,7 +73,7 @@
 }
 
 .S_Footer a:hover {
-    color: var(--main-orange-color);
+  color: var(--main-orange-color);
 }
 
 .S_Recipes {
@@ -69,4 +82,15 @@
 
 .S_Articles {
   background-color: var(--secondary-light-blue-color);
+}
+
+.S_TestsMainScreen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rem;
+  
+}
+
+.S_Tests {
+  background-color: var(--secondary-light-pink-color);
 }
