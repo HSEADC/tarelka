@@ -47,6 +47,13 @@ const htmlPages = [
     'basic',
     'filterTags'
   ]),
+
+    createPage(
+    './src/pages/recepies/recepie1.html',
+    './pages/recepies/recepie1.html',
+    ['index', 'basic'],
+  ),
+
   createPage('./src/pages/tests.html', './pages/tests.html', [
     'index',
     'basic',

@@ -94,3 +94,16 @@
 .S_Tests {
   background-color: var(--secondary-light-pink-color);
 }
+
+
+
+
+
+
+.S_HeaderArticleScreen1{
+  max-width: 67.5rem;  
+  margin: 0 auto;
+  padding: 0 3rem; 
+}
+
+
