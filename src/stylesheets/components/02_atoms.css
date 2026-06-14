@@ -170,3 +170,71 @@ input {
   object-fit: cover;
   max-height: 25rem; 
 }
+
+
+
+.back-button {
+  position: absolute;
+  top: 4rem;         
+  left: 8.125rem;    
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  z-index: 10; 
+}       
+
+
+.back-button__circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--main-orange-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  transform: translateX( 4px);
+}
+
+
+.back-button__inner-circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--text-main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.back-button__arrow {
+  width: 1rem;
+  height: 1rem;
+  color: var(--main-orange-color);
+
+}
+
+
+.back-button__label {
+  background-color: var(--main-orange-color);
+  color: var(--text-main-color);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: 70px;
+  margin-left: 0;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
