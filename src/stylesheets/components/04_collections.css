@@ -21,26 +21,19 @@
 
 
 
+
 .C_TitleArticle1 {
   background-color: var(--main-orange-color);
-  border-radius: 2rem;  
-  padding: 3rem 3.5rem 3.5rem;  
+  border-radius: 32rem;          
+  padding: 48rem 56rem 56rem;   
   position: relative;
 }
 
 
 .C_UsefulBlock1 {
-
   background: var(--main-orange-color);
-  border-radius: 1rem;
-  padding: 2rem 2.25rem;
-  margin: 2rem 0;
-}
-
-.C_UsefulBlock1 p {
-  color: var(--text-main-color);
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  border-radius: 16rem;
+  padding: 32rem 36rem;
+  margin: 32rem 0;
 }
 

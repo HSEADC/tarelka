@@ -100,10 +100,17 @@
 
 
 
-.S_HeaderArticleScreen1{
-  max-width: 67.5rem;  
+
+.S_HeaderArticleScreen1 {
+  max-width: 1080rem;       
   margin: 0 auto;
-  padding: 0 3rem; 
+  padding: 0 48rem;             
+}
+
+.S_ArticleContent {
+  max-width: 720rem;             
+  margin: 0 auto;
+  padding: 48rem 48rem 80rem;    
 }
 
 

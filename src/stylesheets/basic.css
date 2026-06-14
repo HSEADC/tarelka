@@ -76,6 +76,15 @@ header {
   justify-content: center;
   width: 100vw;
 }
+
+
+
+main {
+  position: relative;
+}
+
+
+
 .menu_list {
   display: flex;
   flex-direction: row;

@@ -144,39 +144,73 @@ input {
 
 
 
-.A_TagArticles{
+
+
+
+
+.A_TagArticles {
   display: inline-block;
   background-color: var(--main-light-green-color);
   color: var(--text-main-color);
-  font-size: 1rem;
+  font-size: 14rem;          
   font-weight: 500;
-  padding: 0.5rem 1.25rem;
-  border-radius: 3.125rem; 
-  margin-bottom: 2rem; 
+  padding: 8rem 20rem;     
+  border-radius: 50rem;      
+  margin-bottom: 32rem;
 }
+
+
+.A_TitleHero {
+  font-size: 72rem;       
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--text-main-color);
+  margin-bottom: 32rem;
+  letter-spacing: -0.5rem;
+}
+
 
 .A_SubtitleArticle {
-  font-size: 2rem;
+  font-size: 17rem;        
   color: var(--text-main-color);
   line-height: 1.6;
-  max-width: 35rem; 
+  max-width: 560rem;
 }
 
+
+.A_TitleSection {
+  font-size: 32rem;          
+  font-weight: 700;
+  color: var(--main-black-color);
+  margin-top: 48rem;
+  margin-bottom: 16rem;
+  line-height: 1.2;
+}
 .A_ArticleImg {
   width: 100%;
-  border-radius: 1rem;
-  margin: 2rem 0; 
   display: block;
   object-fit: cover;
-  max-height: 25rem; 
+  max-height: 464rem;
+  margin: 32rem 0;
 }
+ul {
+  padding-left: 24rem;
+  margin-bottom: 32rem;
+}
+ol {
+  padding-left: 24rem;
+  margin-bottom: 32rem;
+}
+
+
+
 
 
 
 .back-button {
   position: absolute;
-  top: 4rem;         
-  left: 8.125rem;    
+  top: 64rem;         
+  left: 130rem;    
   display: inline-flex;
   align-items: center;
   text-decoration: none;
@@ -189,8 +223,8 @@ input {
 
 
 .back-button__circle {
-  width: 3rem;
-  height: 3rem;
+  width: 48rem;
+  height: 48rem;
   border-radius: 50%;
   background-color: var(--main-orange-color);
   display: flex;
@@ -204,8 +238,8 @@ input {
 
 
 .back-button__inner-circle {
-  width: 2rem;
-  height: 2rem;
+  width: 32rem;
+  height: 32rem;
   border-radius: 50%;
   background-color: var(--text-main-color);
   display: flex;
@@ -215,8 +249,8 @@ input {
 
 
 .back-button__arrow {
-  width: 1rem;
-  height: 1rem;
+  width: 16rem;
+  height: 16rem;
   color: var(--main-orange-color);
 
 }
@@ -225,9 +259,9 @@ input {
 .back-button__label {
   background-color: var(--main-orange-color);
   color: var(--text-main-color);
-  font-size: 1rem;
+  font-size: 16rem;
   font-weight: 700;
-  padding: 0.75rem 2rem;
+  padding: 12rem 32rem;
   border-radius: 70px;
   margin-left: 0;
   position: relative;
