@@ -164,11 +164,14 @@ input {
   font-size: 72rem;       
   font-weight: 800;
   line-height: 1.1;
-  color: var(--text-main-color);
+  color: var(--main-black-color);
   margin-bottom: 32rem;
   letter-spacing: -0.5rem;
 }
 
+.A_Subtitle{
+  color: var(--main-black-color);
+}
 
 .A_SubtitleArticle {
   font-size: 17rem;        
@@ -288,6 +291,9 @@ ol {
   box-shadow: 0 8rem 30rem rgba(0, 0, 0, 0.1);
 }
 
+.A_SubtitleIng{
+  color: var(--text-main-color);
+}
 
 .A_IngredientsImg {
   width: 200rem;
@@ -316,7 +322,6 @@ ol {
   font-weight: 400;
   font-size: 15rem;
   line-height: 1.5;
-  color: #A3A19C;
   margin-bottom: 12rem;
 }
 
