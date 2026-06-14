@@ -60,3 +60,35 @@
 .M_ArticleCard.xxl {
   width: 1240rem;
 }
+
+
+
+
+
+
+/* для рецептов */
+.M_InfoRecipes {
+  display: flex;
+  gap: 40rem;
+  flex-wrap: wrap;
+  margin-bottom: 30rem;
+}
+
+
+.M_Calories {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.M_Ingredients {
+  flex: 1;
+  z-index: 1;
+  position: relative;
+}
+
+
+.M_CookingBlock {
+  flex: 1;
+  padding-top: 10rem;
+}

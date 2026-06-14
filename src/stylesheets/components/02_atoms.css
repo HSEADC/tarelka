@@ -147,7 +147,7 @@ input {
 
 
 
-
+/* Для статей */
 .A_TagArticles {
   display: inline-block;
   background-color: var(--main-light-green-color);
@@ -206,7 +206,7 @@ ol {
 
 
 
-
+/* кнопка "вернуться назад" */
 .back-button {
   position: absolute;
   top: 64rem;         
@@ -271,4 +271,57 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+
+
+
+/* Для рецептов */
+.A_RecepieImgMain {
+  width: 380rem;
+  height: 380rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+  box-shadow: 0 8rem 30rem rgba(0, 0, 0, 0.1);
+}
+
+
+.A_IngredientsImg {
+  width: 200rem;
+  height: auto;
+  position: absolute;
+  right: 40rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+
+.A_StepsImg {
+  width: 380rem;
+  height: 280rem;
+  border-radius: 20rem;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+
+.A_SubtitleIngredients {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 15rem;
+  line-height: 1.5;
+  color: #A3A19C;
+  margin-bottom: 12rem;
+}
+
+
+.A_recepieLightGreen {
+  color: #A6E4C1;  
+  font-weight: 400;
 }

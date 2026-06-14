@@ -327,4 +327,154 @@
   #burger.active + .O_Header {
     transform: translateX(0);
   }
+
+
+
+
+
+  /* для рецепта */
+
+  .S_HeaderRecipe {
+    flex-direction: column;
+    align-items: center;
+    gap: 20rem;
+    margin-bottom: 30rem;
+  }
+
+
+  .A_RecepieImgMain {
+    width: 280rem;
+    height: 280rem;
+    border-radius: 20rem;
+    box-shadow: none;
+  }
+
+  
+  .O_InfoRecipesBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .S_HeaderRecipe .A_TitleHero {
+    font-size: 48rem;
+    text-align: center;
+  }
+
+
+  .M_InfoRecipes {
+    gap: 16rem;
+    justify-content: center;
+  }
+
+ 
+  .A_TagRecipes {
+    font-size: 15rem;
+    padding: 10rem 24rem;
+  }
+
+
+  .S_Ingredients2 {
+    flex-direction: column;
+    padding: 30rem 25rem;
+    min-height: auto;
+    margin-bottom: 30rem;
+  }
+
+  
+  .A_IngredientsImg {
+    display: none;
+  }
+
+ 
+  .O_CookingBlock {
+    flex-direction: column;
+    gap: 20rem;
+  }
+
+
+  .A_StepsImg {
+    width: 100%;
+    height: 220rem;
+  }
+
+
+  .M_CookingBlock {
+    padding-top: 0;
+  }
+
+  
+  .S_Steps {
+    margin-bottom: 30rem;
+  }
+
+ 
+  .back-button {
+    margin: 20rem 24rem;
+  }
+
+
+
+  /* для страницы статьи */
+  .back-button {
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 20rem 0 20rem 24rem;
+    align-self: flex-start;      
+  }
+
+
+  .S_HeaderArticleScreen1 {
+    padding: 0 20rem;
+    margin-bottom: 32rem;
+  }
+
+
+  .C_TitleArticle1 {
+    padding: 32rem 28rem 40rem;
+    border-radius: 24rem;
+  }
+
+
+  .A_TitleHero {
+    font-size: 40rem;
+  }
+
+
+  .A_SubtitleArticle {
+    font-size: 15rem;
+  }
+
+
+  .S_ArticleContent {
+    padding: 32rem 24rem 60rem;
+    max-width: 100%;
+  }
+
+
+  .A_TitleSection {
+    font-size: 24rem;
+  }
+
+
+  .A_ContentText {
+    font-size: 15rem;
+  }
+
+
+  .A_ArticleImg {
+    margin: 24rem 0;
+    max-height: none;
+    border-radius: 12rem;
+  }
+
+
+  .C_UsefulBlock1 {
+    padding: 24rem 20rem;
+    margin: 24rem 0;
+    border-radius: 12rem;
+  }
 }

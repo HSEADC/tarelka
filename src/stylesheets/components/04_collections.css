@@ -21,7 +21,7 @@
 
 
 
-
+/* для статей */
 .C_TitleArticle1 {
   background-color: var(--main-orange-color);
   border-radius: 32rem;          
@@ -35,5 +35,18 @@
   border-radius: 16rem;
   padding: 32rem 36rem;
   margin: 32rem 0;
+}
+
+
+/* для рецептов */
+.O_InfoRecipesBlock {
+  flex: 1;
+  padding-top: 10rem;
+}
+
+.O_CookingBlock {
+  display: flex;
+  align-items: flex-start;
+  gap: 40rem;
 }
 

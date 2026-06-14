@@ -100,7 +100,7 @@
 
 
 
-
+/* для статей */
 .S_HeaderArticleScreen1 {
   max-width: 1080rem;       
   margin: 0 auto;
@@ -111,6 +111,33 @@
   max-width: 720rem;             
   margin: 0 auto;
   padding: 48rem 48rem 80rem;    
+}
+
+/* для рецептов */
+.S_HeaderRecipe {
+  display: flex;
+  align-items: flex-start;
+  gap: 50rem;
+  max-width: 1200rem;
+  margin-bottom: 50rem;
+}
+
+.S_Ingredients2 {
+  background-color: var(--main-green-color);
+  border-radius: 30rem;
+  padding: 45rem 55rem;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  min-height: 320rem;
+  margin-bottom: 50rem;
+  max-width: 1200rem;
+}
+
+.S_Steps {
+  margin-bottom: 50rem;
+  max-width: 1200rem;
 }
 
 
