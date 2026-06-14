@@ -49,8 +49,8 @@ const htmlPages = [
   ]),
 
     createPage(
-    './src/pages/recepies/recepie1.html',
-    './pages/recepies/recepie1.html',
+    './src/pages/recepies/recipe1.html',
+    './pages/recepies/recipe1.html',
     ['index', 'basic'],
   ),
 
