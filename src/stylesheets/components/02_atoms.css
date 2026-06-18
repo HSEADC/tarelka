@@ -312,8 +312,29 @@ ol {
   box-shadow: 0 8rem 30rem rgba(0, 0, 0, 0.1);
 }
 
-.A_SubtitleIng{
+.A_TitleHeroRecipe {
+  color: var(--main-black-color);
+  font-size: 140rem; 
+  font-weight: 500;
+}
+
+.A_SubtitleIng {
   color: var(--text-main-color);
+}
+
+.A_SubtitleRecipe {
+  font-size: 24rem; 
+  font-weight: 400;
+  color: var(--main-black-color);
+}
+
+.A_TitleSectionRecipe {
+  color: var(--main-black-color);
+  font-size: 48rem; 
+}
+
+.A_TitleSectionIng {
+  font-size: 48rem; 
 }
 
 .A_IngredientsImg {
@@ -328,6 +349,7 @@ ol {
 }
 
 
+
 .A_StepsImg {
   width: 380rem;
   height: 280rem;
@@ -340,14 +362,16 @@ ol {
 
 .A_SubtitleIngredients {
   font-family: 'Ubuntu';
+  font-size: 24rem; 
   font-weight: 400;
-  font-size: 15rem;
   line-height: 1.5;
   margin-bottom: 12rem;
+  color: #A3A19C
 }
 
 
 .A_recepieLightGreen {
+  font-size: 24rem; 
   color: #A6E4C1;  
   font-weight: 400;
 }
