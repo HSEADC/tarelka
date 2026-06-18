@@ -160,34 +160,47 @@ input {
 }
 
 
-.A_TitleHero {
+.A_TitleHeroArticle {
   font-size: 72rem;       
   font-weight: 800;
   line-height: 1.1;
-  color: var(--main-black-color);
   margin-bottom: 32rem;
   letter-spacing: -0.5rem;
 }
 
-.A_Subtitle{
-  color: var(--main-black-color);
-}
 
-.A_SubtitleArticle {
+.A_SubtitleArticleHero {
   font-size: 17rem;        
   color: var(--text-main-color);
   line-height: 1.6;
   max-width: 560rem;
 }
 
+.A_SubtitleArticle {
+  font-size: 17rem;        
+  line-height: 1.6;
+  max-width: 560rem;
+  color: var(--main-black-color);
+}
 
-.A_TitleSection {
+.A_SubtitleArticleBox {
+  color: var(--text-main-color);
+  font-size: 17rem;        
+  line-height: 1.6;
+  max-width: 560rem;
+}
+
+
+.A_TitleSectionArticle {
   font-size: 32rem;          
   font-weight: 700;
   color: var(--main-black-color);
   margin-top: 48rem;
   margin-bottom: 16rem;
   line-height: 1.2;
+
+
+
 }
 .A_ArticleImg {
   width: 100%;
@@ -196,14 +209,22 @@ input {
   max-height: 464rem;
   margin: 32rem 0;
 }
+
 ul {
   padding-left: 24rem;
   margin-bottom: 32rem;
+  font-size: 17rem; 
+  color: var(--text-main-color);
+  line-height: 1.6;
 }
 ol {
   padding-left: 24rem;
   margin-bottom: 32rem;
+  font-size: 17rem; 
+  color: var(--main-black-color);
+  line-height: 1.6;
 }
+
 
 
 

@@ -169,3 +169,21 @@
   width: 820rem;
   height: 550rem;
 }
+
+
+
+
+
+
+/* для рецептов */
+.O_InfoRecipesBlock {
+  flex: 1;
+  padding-top: 10rem;
+}
+
+.O_CookingBlock {
+  display: flex;
+  align-items: flex-start;
+  gap: 40rem;
+}
+
