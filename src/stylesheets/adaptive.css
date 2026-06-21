@@ -336,15 +336,17 @@
 
   .S_HeaderRecipe {
     flex-direction: column;
+    order: 0;
     align-items: center;
     gap: 20rem;
-    margin-bottom: 30rem;
+    margin-top: 304rem;
   }
 
 
   .A_RecepieImgMain {
     width: 280rem;
     height: 280rem;
+    order: 1;
     border-radius: 20rem;
     box-shadow: none;
   }
@@ -358,15 +360,21 @@
   }
 
 
-  .S_HeaderRecipe .A_TitleHero {
-    font-size: 48rem;
-    text-align: center;
+  .S_HeaderRecipe .A_TitleHeroRecipe {
+    font-size: 32rem;
+    text-align: left;
+    margin-left: 20rem;
+    margin-top: -320rem;
+  }
+
+  .back-button__label {
+    display: none;
   }
 
 
   .M_InfoRecipes {
     gap: 16rem;
-    justify-content: center;
+    justify-content: left;
   }
 
  
@@ -394,6 +402,17 @@
     gap: 20rem;
   }
 
+  .A_TitleSectionRecipe {
+    font-size: 20rem;
+    font-weight: 600;
+    justify-content: left;
+    text-align: left;
+  }
+
+  .A_SubtitleRecipeInfo {
+    font-size: 14rem;
+    text-align: left;
+  }
 
   .A_StepsImg {
     width: 100%;
@@ -405,7 +424,10 @@
     padding-top: 0;
   }
 
-  
+  .M_Calories{
+    justify-content: left;
+  }
+
   .S_Steps {
     margin-bottom: 30rem;
   }
@@ -422,14 +444,19 @@
     position: static;
     top: auto;
     left: auto;
-    margin: 20rem 0 20rem 24rem;
+    margin: 20rem 0 20rem 15rem;
     align-self: flex-start;      
   }
 
 
   .S_HeaderArticleScreen1 {
     padding: 0 20rem;
-    margin-bottom: 32rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+  }
+
+  .S_ArticleContent {           
+    margin-bottom: -110rem;
   }
 
 
@@ -443,6 +470,10 @@
     font-size: 40rem;
   }
 
+  .A_TitleHeroArticle{
+    font-size: 42rem;
+  }
+
 
   .A_SubtitleArticle {
     font-size: 15rem;
@@ -452,6 +483,10 @@
   .S_ArticleContent {
     padding: 32rem 24rem 60rem;
     max-width: 100%;
+  }
+
+  .A_SubtitleArticle + .A_SubtitleArticle {
+  margin-top: 20rem;
   }
 
 
@@ -473,7 +508,8 @@
 
 
   .C_UsefulBlock1 {
-    padding: 24rem 20rem;
+    height: 250rem;
+    padding: 0rem 20rem;
     margin: 24rem 0;
     border-radius: 12rem;
   }

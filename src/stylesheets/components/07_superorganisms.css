@@ -118,10 +118,12 @@
 /* для рецептов */
 .S_HeaderRecipe {
   display: flex;
+  justify-content: center;
   align-items: flex-start;
   gap: 50rem;
   max-width: 1200rem;
   margin-bottom: 50rem;
+  margin-top: 85rem;  
 }
 
 .S_Ingredients2 {
@@ -133,13 +135,14 @@
   position: relative;
   overflow: hidden;
   min-height: 320rem;
-  margin-bottom: 50rem;
-  max-width: 1200rem;
+  margin-bottom: 100rem;
+  margin-top: 64rem;
+  max-width: 1380rem;
 }
 
 .S_Steps {
   margin-bottom: 50rem;
-  max-width: 1200rem;
+  max-width: 1380rem;
 }
 
 

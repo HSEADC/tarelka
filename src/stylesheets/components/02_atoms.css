@@ -239,7 +239,7 @@ input {
 .back-button {
   position: absolute;
   top: 20rem;         
-  left: 130rem;    
+  left: 80rem;    
   display: inline-flex;
   align-items: center;
   text-decoration: none;
@@ -289,7 +289,7 @@ input {
   background-color: var(--main-orange-color);
   color: var(--text-main-color);
   font-size: 16rem;
-  font-weight: 700;
+  font-weight: 400;
   padding: 12rem 32rem;
   border-radius: 70px;
   margin-left: 0;
@@ -308,8 +308,8 @@ input {
 
 /* Для рецептов */
 .A_RecepieImgMain {
-  width: 380rem;
-  height: 380rem;
+  width: 560rem;
+  height: 560rem;
   border-radius: 50%;
   object-fit: cover;
   display: block;
@@ -325,6 +325,15 @@ input {
 
 .A_SubtitleIng {
   color: var(--text-main-color);
+  font-size: 24rem; 
+  margin-bottom: 16rem;
+}
+
+.A_SubtitleRecipeInfo {
+  max-width: 200rem;
+  font-size: 20rem; 
+  font-weight: 400;
+  color: var(--main-black-color);
 }
 
 .A_SubtitleRecipe {
@@ -335,18 +344,25 @@ input {
 
 .A_TitleSectionRecipe {
   color: var(--main-black-color);
-  font-size: 48rem; 
+  font-size: 40rem; 
+}
+
+.A_TitleSectionRecipeSteps {
+  color: var(--main-black-color);
+  font-size: 40rem; 
+  margin-bottom: 20rem;
 }
 
 .A_TitleSectionIng {
-  font-size: 48rem; 
+  font-size: 40rem; 
+  margin-bottom: 32rem;
 }
 
 .A_IngredientsImg {
-  width: 200rem;
+  width: 400rem;
   height: auto;
   position: absolute;
-  right: 40rem;
+  right: 60rem;
   top: 50%;
   transform: translateY(-50%);
   opacity: 0.85;
@@ -356,8 +372,8 @@ input {
 
 
 .A_StepsImg {
-  width: 380rem;
-  height: 280rem;
+  width: 555rem;
+  height: 390rem;
   border-radius: 20rem;
   object-fit: cover;
   display: block;
@@ -379,4 +395,5 @@ input {
   font-size: 24rem; 
   color: #A6E4C1;  
   font-weight: 400;
+  margin-left: 8rem;
 }

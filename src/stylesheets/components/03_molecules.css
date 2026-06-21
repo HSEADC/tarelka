@@ -69,15 +69,22 @@
 /* для рецептов */
 .M_InfoRecipes {
   display: flex;
-  gap: 40rem;
+  gap: 24rem;
+  max-width: 1000rem;
   flex-wrap: wrap;
-  margin-bottom: 30rem;
+  margin-top: 48rem;
+  margin-bottom: 48rem;
 }
 
 
 .M_Calories {
   display: flex;
+  max-width: 150rem;
   flex-direction: column;
+}
+
+.M_Calories1{
+  width: 180rem;
 }
 
 
