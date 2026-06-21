@@ -32,9 +32,21 @@
 
 .C_UsefulBlock1 {
   background: var(--main-orange-color);
+  height: 220rem;           
+  padding: 0rem 40rem;
+  background: var(--main-orange-color);
   border-radius: 16rem;
-  padding: 32rem 36rem;
-  margin: 10rem 0;
+  margin: 10rem 0;   
+  margin-bottom: 32rem;    
+  margin-top: 20rem;   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: flex-start;
+}
+
+.C_UsefulBlock1 p {
+  margin-bottom: 20rem;
 }
 
 

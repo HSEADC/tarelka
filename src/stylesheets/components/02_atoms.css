@@ -183,6 +183,10 @@ input {
   color: var(--main-black-color);
 }
 
+.A_SubtitleArticle + .A_SubtitleArticle {
+  margin-top: 40rem;
+}
+
 .A_SubtitleArticleBox {
   color: var(--text-main-color);
   font-size: 17rem;        
@@ -210,14 +214,15 @@ input {
   margin: 32rem 0;
 }
 
-ul {
+.A_ulArticle {
+  list-style-type: disc; 
   padding-left: 24rem;
-  margin-bottom: 32rem;
   font-size: 17rem; 
   color: var(--text-main-color);
   line-height: 1.6;
 }
-ol {
+.A_olArticle {
+  list-style-type: decimal;
   padding-left: 24rem;
   margin-bottom: 32rem;
   font-size: 17rem; 
@@ -233,7 +238,7 @@ ol {
 /* кнопка "вернуться назад" */
 .back-button {
   position: absolute;
-  top: 64rem;         
+  top: 20rem;         
   left: 130rem;    
   display: inline-flex;
   align-items: center;

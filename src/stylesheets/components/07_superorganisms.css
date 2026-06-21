@@ -103,14 +103,16 @@
 /* для статей */
 .S_HeaderArticleScreen1 {
   max-width: 1080rem;       
-  margin: 0 auto;
-  padding: 0 20rem;             
+  margin-top: 100rem;           
 }
 
 .S_ArticleContent {
   max-width: 720rem;             
-  margin: 0 auto;
+  margin-bottom: -50rem;
   padding: 20rem 20rem 20rem;    
+}
+.S_ArticleContent p{
+  font-weight: 400;
 }
 
 /* для рецептов */
