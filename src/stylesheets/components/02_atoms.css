@@ -329,7 +329,7 @@ input {
   margin-bottom: 16rem;
 }
 
-.A_SubtitleRecipeInfo {
+.A_SubtitleRecipeInfo, .A_SubtitleRecipeInfo1 {
   max-width: 200rem;
   font-size: 20rem; 
   font-weight: 400;
@@ -342,7 +342,7 @@ input {
   color: var(--main-black-color);
 }
 
-.A_TitleSectionRecipe {
+.A_TitleSectionRecipe, .A_TitleSectionRecipe1{
   color: var(--main-black-color);
   font-size: 40rem; 
 }

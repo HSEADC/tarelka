@@ -71,7 +71,7 @@
   display: flex;
   gap: 24rem;
   max-width: 1000rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-top: 48rem;
   margin-bottom: 48rem;
 }
@@ -79,8 +79,9 @@
 
 .M_Calories {
   display: flex;
-  max-width: 150rem;
   flex-direction: column;
+  flex: 1 1 0;         
+  min-width: 0;         
 }
 
 .M_Calories1{

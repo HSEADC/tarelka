@@ -347,10 +347,14 @@
     width: 280rem;
     height: 280rem;
     order: 1;
+    margin-top: -100rem;
     border-radius: 20rem;
     box-shadow: none;
   }
 
+  .A_TitleHeroRecipe {
+    margin-bottom: -30rem;
+  }
   
   .O_InfoRecipesBlock {
     display: flex;
@@ -373,8 +377,16 @@
 
 
   .M_InfoRecipes {
-    gap: 16rem;
-    justify-content: left;
+    margin-left: 20rem;
+    margin-right: 10rem;
+    margin-bottom: 20rem;
+    flex-wrap: nowrap;         
+    justify-content: flex-start;
+  }
+
+
+  .M_Calories:has(.A_TitleSectionRecipe1) {
+   display: none;
   }
 
  
@@ -384,11 +396,17 @@
   }
 
 
+
   .S_Ingredients2 {
     flex-direction: column;
     padding: 30rem 25rem;
     min-height: auto;
     margin-bottom: 30rem;
+    margin-top: -20rem;
+  }
+
+  .A_SubtitleIngredients, .A_SubtitleRecipe {
+    font-size: 20rem;
   }
 
   
@@ -426,6 +444,8 @@
 
   .M_Calories{
     justify-content: left;
+    flex: 1;             
+    min-width: 0;   
   }
 
   .S_Steps {
