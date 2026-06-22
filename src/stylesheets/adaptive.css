@@ -224,12 +224,14 @@
   }
 
   .M_RecipesCards {
-    width: 44%;
+    width: 47%;
   }
   .M_RecipesCards.big {
-    background-position: top right;
-    width: 90%;
+    background-position: 100% 110%;
+    background-size: 80%;
+    width: 100%;
   }
+
   .M_RecipesCards:nth-of-type(n + 1):nth-of-type(-n + 8),
   .M_RecipesCards:nth-of-type(10) {
     order: 1;
@@ -259,7 +261,7 @@
     width: 40rem;
     height: 40rem;
     margin-right: 10rem;
-    margin-left: 340rem;
+    margin-left: 320rem;
     cursor: pointer;
     position: fixed;
     z-index: 1000;
@@ -328,10 +330,6 @@
     transform: translateX(0);
   }
 
-
-
-
-
   /* для рецепта */
 
   .S_HeaderRecipe {
@@ -342,7 +340,6 @@
     margin-top: 304rem;
   }
 
-
   .A_RecepieImgMain {
     width: 280rem;
     height: 280rem;
@@ -351,11 +348,10 @@
     border-radius: 20rem;
     box-shadow: none;
   }
-
   .A_TitleHeroRecipe {
     margin-bottom: -30rem;
   }
-  
+
   .O_InfoRecipesBlock {
     display: flex;
     flex-direction: column;
@@ -414,12 +410,10 @@
     display: none;
   }
 
- 
   .O_CookingBlock {
     flex-direction: column;
     gap: 20rem;
   }
-
   .A_TitleSectionRecipe {
     font-size: 20rem;
     font-weight: 600;
@@ -437,7 +431,6 @@
     height: 220rem;
   }
 
-
   .M_CookingBlock {
     padding-top: 0;
   }
@@ -452,12 +445,9 @@
     margin-bottom: 30rem;
   }
 
- 
   .back-button {
     margin: 20rem 24rem;
   }
-
-
 
   /* для страницы статьи */
   .back-button {
@@ -465,9 +455,8 @@
     top: auto;
     left: auto;
     margin: 20rem 0 20rem 15rem;
-    align-self: flex-start;      
+    align-self: flex-start;
   }
-
 
   .S_HeaderArticleScreen1 {
     padding: 0 20rem;
@@ -485,7 +474,6 @@
     border-radius: 24rem;
   }
 
-
   .A_TitleHero {
     font-size: 40rem;
   }
@@ -499,12 +487,10 @@
     font-size: 15rem;
   }
 
-
   .S_ArticleContent {
     padding: 32rem 24rem 60rem;
     max-width: 100%;
   }
-
   .A_SubtitleArticle + .A_SubtitleArticle {
   margin-top: 20rem;
   }
@@ -514,11 +500,9 @@
     font-size: 24rem;
   }
 
-
   .A_ContentText {
     font-size: 15rem;
   }
-
 
   .A_ArticleImg {
     margin: 24rem 0;
@@ -526,11 +510,254 @@
     border-radius: 12rem;
   }
 
-
   .C_UsefulBlock1 {
     height: 250rem;
     padding: 0rem 20rem;
     margin: 24rem 0;
     border-radius: 12rem;
   }
+  .S_RecipesMainScreen,
+  .S_ArticlesMainScreen,
+  .S_GuidesMainScreen,
+  .S_TestsMainScreen {
+    padding: 0rem 20rem;
+  }
+  .M_RecipesCards {
+    height: 242rem;
+  }
+  h4 {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 16rem;
+    line-height: 120%;
+  }
+  .S_MainScreen {
+    padding: 300rem 20rem 40rem 20rem;
+    gap: 24rem;
+  }
+  .button_hero {
+    width: 100%;
+    padding: 10rem 16rem;
+  }
+  .S_HeaderMainScreen {
+    background-color: var(--main-green-color);
+    background-image: url(/src/img/Adaptive/Main.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: 120%;
+  }
+
+  .S_HeaderArticlesScreen {
+    background-image: url(/src/img/Adaptive/Thumbnail/Articles.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 20%;
+    background-size: 100%;
+  }
+
+  .S_AboutMainScreen {
+    padding: 40rem 20rem;
+  }
+  .A_TitleSection_About {
+    display: none;
+  }
+  .C_AboutCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0rem;
+    grid-row-gap: 8rem;
+    grid-auto-rows: 145rem;
+  }
+  .O_AboutCardWide {
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: var(--main-pink-color);
+    background-image: url(../img/Adaptive/AboutCards/Group\ 95.svg);
+    background-size: cover;
+    background-position: 12% 0%;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: 50%;
+    border-radius: 40rem;
+    width: 100%;
+  }
+
+  .O_AboutCardSmall {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40rem;
+    padding: 24rem;
+  }
+  .card-purple {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .W_Text_CardSmall {
+    align-items: flex-start;
+    margin-left: 8rem;
+  }
+  .A_Subtitle__CardSmall {
+    text-align: left;
+  }
+  .card-green {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .O_AboutCardSmall img {
+    width: 100rem;
+    height: 80rem;
+  }
+  .card-orange {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+
+  .A_TitleSection_CardWide {
+    margin: 80rem 0 0 24rem;
+    line-height: 100%;
+    width: 314rem;
+  }
+  h3 {
+    font-size: 32rem;
+  }
+  .A_Subtitle__CardWide {
+    margin-left: 24rem;
+    width: 314rem;
+  }
+
+  p {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 16rem;
+    line-height: 120%;
+    color: var(--text-main-color);
+  }
+  .S_RecipesMainScreen {
+    margin-top: 40rem;
+  }
+  .A_Button_Primary {
+    display: none;
+  }
+  .A_Button_Primary.button_hero,
+  .A_Button_Primary.footer {
+    display: inline-block;
+    width: 100%;
+    padding: 10rem 16rem;
+  }
+  .M_TitleLink {
+    margin-bottom: 20rem;
+  }
+  .O_RecipesCardsM {
+    margin-top: 20rem;
+  }
+  .O_TestBlock {
+    margin: 20rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 24rem;
+    border-radius: 40rem;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .O_TestBlock img,
+  .O_ContactBlock img {
+    width: 300rem;
+  }
+  .W_Text_Test {
+    gap: 8rem;
+  }
+  .O_ContactBlock {
+    margin-top: 40rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 40rem 20rem;
+    flex-direction: column;
+  }
+  .A_Fruits_MainScreen_PatternTomato {
+    display: none;
+  }
+  .A_Form_Input {
+    display: flex;
+    gap: 12rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  input {
+    width: 100%;
+    height: auto;
+    background-color: #fefefe;
+    border: 1rem solid #dadae2;
+    border-radius: 100rem;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 100%;
+    color: #000;
+    padding: 9.5rem 16rem;
+    display: flex;
+    align-items: center;
+  }
+  .S_FooterMain {
+    padding: 0rem 20rem;
+  }
+  .menu.footer {
+    display: none;
+  }
+  .O_Footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    margin-bottom: 50rem;
+  }
+  .M_ArticleCard {
+    height: 273rem;
+  }
+  .M_ArticleCard img {
+    height: 273rem;
+  }
+  .S_HeaderRecepiesScreen {
+    background-color: var(--main-light-green-color);
+    background-image: url(../img/Adaptive/Thumbnail/Recipes.svg);
+    background-repeat: no-repeat;
+    background-position: 50% -100%;
+    background-size: 100%;
+  }
+
+  .A_NavigationLogo.mobile {
+    display: flex;
+    z-index: 2;
+  }
+  header {
+    margin-top: 20rem;
+    padding-left: 20rem;
+    display: flex;
+    justify-content: flex-start;
+    width: 100vw;
+    align-items: center;
+  }
+  .M_ArticleCard {
+    background-size: 180%;
+  }
+  .A_TagRecipes {
+    font-size: 8rem;
+    padding: 4rem 12rem;
+  }
+  .input-wrapper input {
+    padding-left: 35px;
+    height: 40px;
+    width: 354rem;
+  }
+  .O_RecipesBlock {
+    display: flex;
+    padding: 40rem 20rem 40rem 20rem;
+    flex-direction: column;
+  }
+  .W_TagsSearchWrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .W_TagTitleWrap {
+    display: flex;
+    gap: 20rem;
+    flex-direction: column;
+  }
+  
 }

@@ -1,48 +1,40 @@
-import Airtable from 'airtable';
+import { supabase } from './supabase';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const token =
-    'patjCRqLMMU67TADJ.39e7069afd25d1f546a9b5546af805a31d51e0f0406fb767cee60c586659656a';
-
-  Airtable.configure({
-    endpointUrl: 'https://api.airtable.com',
-    apiKey: token,
-  });
-
-  const base = Airtable.base('app11awHwinfj4ZoV');
-
   getCardTeasers().then((content) => {
     createRecipesTeasersCards(content);
     createRecipesTeasersCardsM(content);
+    
+    // ЗАПУСКАЕМ ФИЛЬТР ПОСЛЕ СОЗДАНИЯ КАРТОЧЕК
+    setTimeout(initFilter, 100);
   });
 
-  function getCardTeasers() {
-    return new Promise((resolve, reject) => {
-      const content = [];
+  async function getCardTeasers() {
+    const { data, error } = await supabase
+      .from('Recepies')
+      .select('*')
+      .order('Direction', { ascending: true })
+      .limit(20);
 
-      base('Recepies')
-        .select({
-          maxRecords: 20,
-          sort: [{ field: 'Direction', direction: 'asc' }],
-        })
-        .firstPage()
-        .then((result) => {
-          result.forEach((record) => {
-            content.push({
-              id: record.id,
-              title: record.fields['Title'],
-              tags: record.fields['Tags'],
-              link: record.fields['URL'],
-              img: record.fields['IMG'],
-              width: record.fields['Width'],
-            });
-          });
+    console.log(data);
+    console.log(error);
 
-          resolve(content);
-        })
-        .catch(reject);
-    });
+    if (error) {
+      console.error(error);
+      return [];
+    }
+
+    return data.map((record) => ({
+      id: record.id,
+      title: record.Title,
+      // ПРЕВРАЩАЕМ СТРОКУ В МАССИВ
+      tags: record.Tags ? record.Tags.split(',').map(t => t.trim()) : [],
+      link: record.URL,
+      img: record.IMG,
+      width: record.Width,
+    }));
   }
+
   const tagClassMap = {
     Завтрак: 'breakfast',
     Обед: 'lunch',
@@ -53,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     Овощи: 'vegetables',
     'Фрукты и ягоды': 'fruits',
   };
+
   function createRecipesTeasersCards(content) {
     const container = document.querySelector('.O_RecipesCards');
     if (!container) return;
@@ -70,18 +63,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const RecipesTags = document.createElement('div');
       RecipesTags.classList.add('C_ArticleTags');
 
-      if (Array.isArray(tags)) {
+      if (Array.isArray(tags) && tags.length > 0) {
         tags.forEach((tag) => {
           const RecipesTag = document.createElement('span');
           RecipesTag.classList.add('A_TagRecipes');
           RecipesTag.innerText = tag;
 
           const specificClass = tagClassMap[tag];
-
           if (specificClass) {
             RecipesTag.classList.add(specificClass);
-          }
-          if (specificClass) {
             RecipesCard.classList.add(specificClass);
           }
 
@@ -120,18 +110,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const RecipesTags = document.createElement('div');
       RecipesTags.classList.add('C_ArticleTags');
 
-      if (Array.isArray(tags)) {
+      if (Array.isArray(tags) && tags.length > 0) {
         tags.forEach((tag) => {
           const RecipesTag = document.createElement('span');
           RecipesTag.classList.add('A_TagRecipes');
           RecipesTag.innerText = tag;
 
           const specificClass = tagClassMap[tag];
-
           if (specificClass) {
             RecipesTag.classList.add(specificClass);
-          }
-          if (specificClass) {
             RecipesCard.classList.add(specificClass);
           }
 
@@ -152,34 +139,30 @@ document.addEventListener('DOMContentLoaded', () => {
       container.appendChild(RecipesCard);
     });
   }
-  function getArticlesCards() {
-    return new Promise((resolve, reject) => {
-      const content = [];
 
-      base('Articles_cards')
-        .select({
-          maxRecords: 20,
-          sort: [{ field: 'Direction', direction: 'asc' }],
-        })
-        .firstPage()
-        .then((result) => {
-          result.forEach((record) => {
-            content.push({
-              id: record.id,
-              title: record.fields['Title'],
-              description: record.fields['Description'],
-              tag: record.fields['Tags'],
-              link: record.fields['URL'],
-              img: record.fields['Image'],
-              size: record.fields['Size'],
-            });
-          });
+  async function getArticlesCards() {
+    const { data, error } = await supabase
+      .from('Articles_cards')
+      .select('*')
+      .order('Direction', { ascending: true })
+      .limit(20);
 
-          resolve(content);
-        })
-        .catch(reject);
-    });
+    if (error) {
+      console.error(error);
+      return [];
+    }
+
+    return data.map((record) => ({
+      id: record.id,
+      title: record.Title,
+      description: record.Description,
+      tag: record.Tags,
+      link: record.URL,
+      img: record.Image,
+      size: record.Size,
+    }));
   }
+
   function createArticlesCards(content) {
     const container = document.querySelector('.O_ArticleCards');
     if (!container) return;
@@ -202,54 +185,126 @@ document.addEventListener('DOMContentLoaded', () => {
         const tagEl = document.createElement('span');
         tagEl.classList.add('A_TagRecipes');
         tagEl.innerText = tag;
-
         tagWrap.appendChild(tagEl);
       }
 
       const card = document.createElement('a');
       card.classList.add('M_ArticleCard');
 
-      //размер карточки
       if (size) {
         card.classList.add(size.toLowerCase());
-        // например: s, m, l, xxl
       }
 
       card.href = link;
       card.style.backgroundImage = `url(${img})`;
 
-      // тег + стрелка
       const topRow = document.createElement('div');
       topRow.classList.add('W_ArticleTop');
 
-      // стрелка
       const arrow = document.createElement('div');
       arrow.classList.add('A_Arrow');
 
       topRow.appendChild(tagWrap);
       topRow.appendChild(arrow);
 
-      // 🔹 текст: title + description
       const textWrap = document.createElement('div');
       textWrap.classList.add('W_ArticleText');
 
       textWrap.appendChild(titleEl);
       textWrap.appendChild(descEl);
 
-      // 🔹 вставка в карточку
       card.appendChild(topRow);
       card.appendChild(textWrap);
 
       container.appendChild(card);
     });
   }
+
   getArticlesCards().then((content) => {
     createArticlesCards(content);
   });
 });
 
-// универсальная функция
-// function setImage(selector, src) {
-//   const el = document.querySelector(selector)
-//   if (el) el.src = src
-// }
+// ============ ФИЛЬТР ============
+function initFilter() {
+  // Создаем тег "Все" если его нет
+  let allTag = document.querySelector('.A_TagRecipes.all');
+  if (!allTag) {
+    const container = document.querySelector('.O_RecipesCards');
+    if (container) {
+      const newAllTag = document.createElement('span');
+      newAllTag.classList.add('A_TagRecipes', 'all', 'active');
+      newAllTag.innerText = 'Все';
+      container.parentNode.insertBefore(newAllTag, container);
+      allTag = newAllTag;
+    } else {
+      console.error('Контейнер .O_RecipesCards не найден');
+      return;
+    }
+  }
+
+  const tags = document.querySelectorAll('.A_TagRecipes');
+
+  tags.forEach((tag) => {
+    tag.addEventListener('click', () => {
+      if (tag.classList.contains('all')) {
+        // Нажали "Все"
+        tags.forEach(t => t.classList.remove('active'));
+        tag.classList.add('active');
+      } else {
+        // Нажали другой тег
+        allTag.classList.remove('active');
+        tag.classList.toggle('active');
+        
+        // Если нет активных тегов - включаем "Все"
+        if (document.querySelectorAll('.A_TagRecipes.active').length === 0) {
+          allTag.classList.add('active');
+        }
+      }
+      
+      filterByTag();
+    });
+  });
+}
+
+function filterByTag() {
+  const cards = document.querySelectorAll('.M_RecipesCards');
+  const activeTags = document.querySelectorAll('.A_TagRecipes.active');
+  
+  // Проверяем активен ли "Все"
+  const isAllActive = activeTags.length === 0 || 
+    Array.from(activeTags).some(tag => tag.classList.contains('all'));
+
+  cards.forEach((card) => {
+    if (isAllActive) {
+      // Показываем все
+      card.style.display = '';
+      if (card.dataset.wasBig) {
+        card.classList.remove('small');
+        card.classList.add('big');
+        delete card.dataset.wasBig;
+      }
+    } else {
+      // Получаем теги карточки
+      const cardTags = Array.from(card.querySelectorAll('.A_TagRecipes'))
+        .map(t => t.innerText);
+      
+      // Получаем активные теги
+      const activeTagTexts = Array.from(activeTags).map(t => t.innerText);
+      
+      // Проверяем совпадение
+      const hasMatch = activeTagTexts.some(active => 
+        cardTags.some(cardTag => cardTag === active)
+      );
+      
+      card.style.display = hasMatch ? '' : 'none';
+      
+      // Меняем размер
+      if (card.classList.contains('big') && !hasMatch) {
+        card.classList.remove('big');
+        card.classList.add('small');
+        card.dataset.wasBig = 'true';
+      }
+    }
+  });
+}

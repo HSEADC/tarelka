@@ -143,9 +143,7 @@
   fill: var(--btn-basic-color);
 }
 
-.Q_NavigationTelegram svg:hover path {
-  fill: var(--btn-hover-color);
-}
+
 
 .Q_NavigationTelegram.white path{
     fill: var(--text-main-color);

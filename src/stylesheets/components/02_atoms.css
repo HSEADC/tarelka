@@ -92,11 +92,6 @@ input {
   background-repeat: no-repeat;
 }
 
-.A_NavigationLogoBlack path {
-  display: block;
-  width: 8%;
-  fill: var(--main-black-color);
-}
 
 .A_NavigationLogo.article path {
   display: block;
@@ -139,23 +134,15 @@ input {
   color: #fefefe;
 }
 
-
-
-
-
-
-
-
-
 /* Для статей */
 .A_TagArticles {
   display: inline-block;
   background-color: var(--main-light-green-color);
   color: var(--text-main-color);
-  font-size: 14rem;          
+  font-size: 14rem;
   font-weight: 500;
-  padding: 8rem 20rem;     
-  border-radius: 50rem;      
+  padding: 8rem 20rem;
+  border-radius: 50rem;
   margin-bottom: 32rem;
 }
 
@@ -231,10 +218,6 @@ input {
 }
 
 
-
-
-
-
 /* кнопка "вернуться назад" */
 .back-button {
   position: absolute;
@@ -247,9 +230,8 @@ input {
   border: none;
   background: none;
   padding: 0;
-  z-index: 10; 
-}       
-
+  z-index: 10;
+}
 
 .back-button__circle {
   width: 48rem;
@@ -262,9 +244,8 @@ input {
   position: relative;
   z-index: 2;
   flex-shrink: 0;
-  transform: translateX( 4px);
+  transform: translateX(4px);
 }
-
 
 .back-button__inner-circle {
   width: 32rem;
@@ -276,14 +257,11 @@ input {
   justify-content: center;
 }
 
-
 .back-button__arrow {
   width: 16rem;
   height: 16rem;
   color: var(--main-orange-color);
-
 }
-
 
 .back-button__label {
   background-color: var(--main-orange-color);
@@ -301,10 +279,6 @@ input {
   align-items: center;
   justify-content: center;
 }
-
-
-
-
 
 /* Для рецептов */
 .A_RecepieImgMain {
@@ -370,7 +344,6 @@ input {
 }
 
 
-
 .A_StepsImg {
   width: 555rem;
   height: 390rem;
@@ -379,7 +352,6 @@ input {
   display: block;
   flex-shrink: 0;
 }
-
 
 .A_SubtitleIngredients {
   font-family: 'Ubuntu';
@@ -390,10 +362,13 @@ input {
   color: #A3A19C
 }
 
-
 .A_recepieLightGreen {
   font-size: 24rem; 
   color: #A6E4C1;  
   font-weight: 400;
   margin-left: 8rem;
+}
+
+.A_NavigationLogo.mobile {
+  display: none;
 }

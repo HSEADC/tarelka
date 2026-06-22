@@ -77,13 +77,32 @@ header {
   width: 100vw;
 }
 
-
-
 main {
   position: relative;
 }
 
+.recepies,
+.recepies path {
+  color: var(--main-light-green-color);
+  fill: var(--main-light-green-color);
+}
 
+.articles,
+.articles path {
+  color: var(--main-purple-color);
+  fill: var(--main-purple-color);
+}
+.tests,
+.tests path {
+  color: var(--main-pink-color);
+  fill: var(--main-pink-color);
+}
+
+.blackhover:hover,
+.blackhover svg:hover path {
+  color: var(--main-black-color);
+  fill: var(--main-black-color);
+}
 
 .menu_list {
   display: flex;

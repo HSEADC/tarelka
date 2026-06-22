@@ -67,13 +67,10 @@
   width: 100%;
   padding: 90rem 130rem;
 }
-.S_Footer p,
-.S_Footer a {
-  color: var(--main-black-color);
-}
+
 
 .S_Footer a:hover {
-  color: var(--main-orange-color);
+  color: var(--main-black-color);
 }
 
 .S_Recipes {
