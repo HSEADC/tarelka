@@ -292,6 +292,34 @@ header {
   justify-content: center;
   width: 100vw;
 }
+
+main {
+  position: relative;
+}
+
+.recepies,
+.recepies path {
+  color: var(--main-light-green-color);
+  fill: var(--main-light-green-color);
+}
+
+.articles,
+.articles path {
+  color: var(--main-purple-color);
+  fill: var(--main-purple-color);
+}
+.tests,
+.tests path {
+  color: var(--main-pink-color);
+  fill: var(--main-pink-color);
+}
+
+.blackhover:hover,
+.blackhover svg:hover path {
+  color: var(--main-black-color);
+  fill: var(--main-black-color);
+}
+
 .menu_list {
   display: flex;
   flex-direction: row;
@@ -480,9 +508,7 @@ main {
   fill: var(--btn-basic-color);
 }
 
-.Q_NavigationTelegram svg:hover path {
-  fill: var(--btn-hover-color);
-}
+
 
 .Q_NavigationTelegram.white path{
     fill: var(--text-main-color);
@@ -587,11 +613,6 @@ input {
   background-repeat: no-repeat;
 }
 
-.A_NavigationLogoBlack path {
-  display: block;
-  width: 8%;
-  fill: var(--main-black-color);
-}
 
 .A_NavigationLogo.article path {
   display: block;
@@ -634,6 +655,245 @@ input {
   color: #fefefe;
 }
 
+/* Для статей */
+.A_TagArticles {
+  display: inline-block;
+  background-color: var(--main-light-green-color);
+  color: var(--text-main-color);
+  font-size: 14rem;
+  font-weight: 500;
+  padding: 8rem 20rem;
+  border-radius: 50rem;
+  margin-bottom: 32rem;
+}
+
+
+.A_TitleHeroArticle {
+  font-size: 72rem;       
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 32rem;
+  letter-spacing: -0.5rem;
+}
+
+
+.A_SubtitleArticleHero {
+  font-size: 17rem;        
+  color: var(--text-main-color);
+  line-height: 1.6;
+  max-width: 560rem;
+}
+
+.A_SubtitleArticle {
+  font-size: 17rem;        
+  line-height: 1.6;
+  max-width: 560rem;
+  color: var(--main-black-color);
+}
+
+.A_SubtitleArticle + .A_SubtitleArticle {
+  margin-top: 40rem;
+}
+
+.A_SubtitleArticleBox {
+  color: var(--text-main-color);
+  font-size: 17rem;        
+  line-height: 1.6;
+  max-width: 560rem;
+}
+
+
+.A_TitleSectionArticle {
+  font-size: 32rem;          
+  font-weight: 700;
+  color: var(--main-black-color);
+  margin-top: 48rem;
+  margin-bottom: 16rem;
+  line-height: 1.2;
+
+
+
+}
+.A_ArticleImg {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  max-height: 464rem;
+  margin: 32rem 0;
+}
+
+.A_ulArticle {
+  list-style-type: disc; 
+  padding-left: 24rem;
+  font-size: 17rem; 
+  color: var(--text-main-color);
+  line-height: 1.6;
+}
+.A_olArticle {
+  list-style-type: decimal;
+  padding-left: 24rem;
+  margin-bottom: 32rem;
+  font-size: 17rem; 
+  color: var(--main-black-color);
+  line-height: 1.6;
+}
+
+
+/* кнопка "вернуться назад" */
+.back-button {
+  position: absolute;
+  top: 20rem;         
+  left: 80rem;    
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  z-index: 10;
+}
+
+.back-button__circle {
+  width: 48rem;
+  height: 48rem;
+  border-radius: 50%;
+  background-color: var(--main-orange-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  transform: translateX(4px);
+}
+
+.back-button__inner-circle {
+  width: 32rem;
+  height: 32rem;
+  border-radius: 50%;
+  background-color: var(--text-main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-button__arrow {
+  width: 16rem;
+  height: 16rem;
+  color: var(--main-orange-color);
+}
+
+.back-button__label {
+  background-color: var(--main-orange-color);
+  color: var(--text-main-color);
+  font-size: 16rem;
+  font-weight: 400;
+  padding: 12rem 32rem;
+  border-radius: 70px;
+  margin-left: 0;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Для рецептов */
+.A_RecepieImgMain {
+  width: 560rem;
+  height: 560rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+  box-shadow: 0 8rem 30rem rgba(0, 0, 0, 0.1);
+}
+
+.A_TitleHeroRecipe {
+  color: var(--main-black-color);
+  font-size: 140rem; 
+  font-weight: 500;
+}
+
+.A_SubtitleIng {
+  color: var(--text-main-color);
+  font-size: 24rem; 
+  margin-bottom: 16rem;
+}
+
+.A_SubtitleRecipeInfo, .A_SubtitleRecipeInfo1 {
+  max-width: 200rem;
+  font-size: 20rem; 
+  font-weight: 400;
+  color: var(--main-black-color);
+}
+
+.A_SubtitleRecipe {
+  font-size: 24rem; 
+  font-weight: 400;
+  color: var(--main-black-color);
+}
+
+.A_TitleSectionRecipe, .A_TitleSectionRecipe1{
+  color: var(--main-black-color);
+  font-size: 40rem; 
+}
+
+.A_TitleSectionRecipeSteps {
+  color: var(--main-black-color);
+  font-size: 40rem; 
+  margin-bottom: 20rem;
+}
+
+.A_TitleSectionIng {
+  font-size: 40rem; 
+  margin-bottom: 32rem;
+}
+
+.A_IngredientsImg {
+  width: 400rem;
+  height: auto;
+  position: absolute;
+  right: 60rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+
+.A_StepsImg {
+  width: 555rem;
+  height: 390rem;
+  border-radius: 20rem;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+.A_SubtitleIngredients {
+  font-family: 'Ubuntu';
+  font-size: 24rem; 
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 12rem;
+  color: #A3A19C
+}
+
+.A_recepieLightGreen {
+  font-size: 24rem; 
+  color: #A6E4C1;  
+  font-weight: 400;
+  margin-left: 8rem;
+}
+
+.A_NavigationLogo.mobile {
+  display: none;
+}
+
 /* main */
 .M_MenuList {
   display: flex;
@@ -660,6 +920,10 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.M_RecipesCards:hover {
+  background-size: 80%;
+  background-color: lightgrey;
 }
 .M_RecipesCards h4,
 .M_RecipesCards span {
@@ -697,6 +961,38 @@ input {
   width: 1240rem;
 }
 
+/* для рецептов */
+.M_InfoRecipes {
+  display: flex;
+  gap: 24rem;
+  max-width: 1000rem;
+  flex-wrap: nowrap;
+  margin-top: 48rem;
+  margin-bottom: 48rem;
+}
+
+.M_Calories {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;         
+  min-width: 0;         
+}
+
+.M_Calories1{
+  width: 180rem;
+}
+
+.M_Ingredients {
+  flex: 1;
+  z-index: 1;
+  position: relative;
+}
+
+.M_CookingBlock {
+  flex: 1;
+  padding-top: 10rem;
+}
+
 /* main */
 .C_AboutCards {
   display: grid;
@@ -714,6 +1010,41 @@ input {
 .C_ArticleTags.black span {
   color: var(--main-black-color);
 }
+
+
+
+
+
+
+/* для статей */
+.C_TitleArticle1 {
+  background-color: var(--main-orange-color);
+  border-radius: 32rem;          
+  padding: 48rem 56rem 56rem;   
+  position: relative;
+}
+
+
+.C_UsefulBlock1 {
+  background: var(--main-orange-color);
+  height: 220rem;           
+  padding: 0rem 40rem;
+  background: var(--main-orange-color);
+  border-radius: 16rem;
+  margin: 10rem 0;   
+  margin-bottom: 32rem;    
+  margin-top: 20rem;   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: flex-start;
+}
+
+.C_UsefulBlock1 p {
+  margin-bottom: 20rem;
+}
+
+
 
 /* main */
 .W_Text_CardSmall {
@@ -958,6 +1289,26 @@ input {
   height: 550rem;
 }
 
+
+
+
+
+
+/* для рецептов */
+.O_InfoRecipesBlock {
+  flex: 1;
+  max-width: 1042rem;
+  padding-top: 10rem;
+}
+
+.O_CookingBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100rem;
+}
+
+
 /* main */
 .S_HeaderMainScreen {
   background-color: var(--main-green-color);
@@ -1027,13 +1378,10 @@ input {
   width: 100%;
   padding: 90rem 130rem;
 }
-.S_Footer p,
-.S_Footer a {
-  color: var(--main-black-color);
-}
+
 
 .S_Footer a:hover {
-  color: var(--main-orange-color);
+  color: var(--main-black-color);
 }
 
 .S_Recipes {
@@ -1054,6 +1402,58 @@ input {
 .S_Tests {
   background-color: var(--secondary-light-pink-color);
 }
+
+
+
+
+
+
+/* для статей */
+.S_HeaderArticleScreen1 {
+  max-width: 1080rem;       
+  margin-top: 100rem;           
+}
+
+.S_ArticleContent {
+  max-width: 720rem;             
+  margin-bottom: -50rem;
+  padding: 20rem 20rem 20rem;    
+}
+.S_ArticleContent p{
+  font-weight: 400;
+}
+
+/* для рецептов */
+.S_HeaderRecipe {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50rem;
+  max-width: 1200rem;
+  margin-bottom: 50rem;
+  margin-top: 85rem;  
+}
+
+.S_Ingredients2 {
+  background-color: var(--main-green-color);
+  border-radius: 30rem;
+  padding: 45rem 55rem;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  min-height: 320rem;
+  margin-bottom: 100rem;
+  margin-top: 64rem;
+  max-width: 1380rem;
+}
+
+.S_Steps {
+  margin-bottom: 50rem;
+  max-width: 1380rem;
+}
+
+
 
 @media screen and (max-width: 600px) {
   html {
@@ -1281,12 +1681,14 @@ input {
   }
 
   .M_RecipesCards {
-    width: 44%;
+    width: 47%;
   }
   .M_RecipesCards.big {
-    background-position: top right;
-    width: 90%;
+    background-position: 100% 110%;
+    background-size: 80%;
+    width: 100%;
   }
+
   .M_RecipesCards:nth-of-type(n + 1):nth-of-type(-n + 8),
   .M_RecipesCards:nth-of-type(10) {
     order: 1;
@@ -1316,7 +1718,7 @@ input {
     width: 40rem;
     height: 40rem;
     margin-right: 10rem;
-    margin-left: 340rem;
+    margin-left: 320rem;
     cursor: pointer;
     position: fixed;
     z-index: 1000;
@@ -1384,6 +1786,437 @@ input {
   #burger.active + .O_Header {
     transform: translateX(0);
   }
+
+  /* для рецепта */
+
+  .S_HeaderRecipe {
+    flex-direction: column;
+    order: 0;
+    align-items: center;
+    gap: 20rem;
+    margin-top: 304rem;
+  }
+
+  .A_RecepieImgMain {
+    width: 280rem;
+    height: 280rem;
+    order: 1;
+    margin-top: -100rem;
+    border-radius: 20rem;
+    box-shadow: none;
+  }
+  .A_TitleHeroRecipe {
+    margin-bottom: -30rem;
+  }
+
+  .O_InfoRecipesBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .S_HeaderRecipe .A_TitleHeroRecipe {
+    font-size: 32rem;
+    text-align: left;
+    margin-left: 20rem;
+    margin-top: -320rem;
+  }
+
+  .back-button__label {
+    display: none;
+  }
+
+
+  .M_InfoRecipes {
+    margin-left: 20rem;
+    margin-right: 10rem;
+    margin-bottom: 20rem;
+    flex-wrap: nowrap;         
+    justify-content: flex-start;
+  }
+
+
+  .M_Calories:has(.A_TitleSectionRecipe1) {
+   display: none;
+  }
+
+ 
+  .A_TagRecipes {
+    font-size: 15rem;
+    padding: 10rem 24rem;
+  }
+
+
+
+  .S_Ingredients2 {
+    flex-direction: column;
+    padding: 30rem 25rem;
+    min-height: auto;
+    margin-bottom: 30rem;
+    margin-top: -20rem;
+  }
+
+  .A_SubtitleIngredients, .A_SubtitleRecipe {
+    font-size: 20rem;
+  }
+
+  
+  .A_IngredientsImg {
+    display: none;
+  }
+
+  .O_CookingBlock {
+    flex-direction: column;
+    gap: 20rem;
+  }
+  .A_TitleSectionRecipe {
+    font-size: 20rem;
+    font-weight: 600;
+    justify-content: left;
+    text-align: left;
+  }
+
+  .A_SubtitleRecipeInfo {
+    font-size: 14rem;
+    text-align: left;
+  }
+
+  .A_StepsImg {
+    width: 100%;
+    height: 220rem;
+  }
+
+  .M_CookingBlock {
+    padding-top: 0;
+  }
+
+  .M_Calories{
+    justify-content: left;
+    flex: 1;             
+    min-width: 0;   
+  }
+
+  .S_Steps {
+    margin-bottom: 30rem;
+  }
+
+  .back-button {
+    margin: 20rem 24rem;
+  }
+
+  /* для страницы статьи */
+  .back-button {
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 20rem 0 20rem 15rem;
+    align-self: flex-start;
+  }
+
+  .S_HeaderArticleScreen1 {
+    padding: 0 20rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+  }
+
+  .S_ArticleContent {           
+    margin-bottom: -110rem;
+  }
+
+
+  .C_TitleArticle1 {
+    padding: 32rem 28rem 40rem;
+    border-radius: 24rem;
+  }
+
+  .A_TitleHero {
+    font-size: 40rem;
+  }
+
+  .A_TitleHeroArticle{
+    font-size: 42rem;
+  }
+
+
+  .A_SubtitleArticle {
+    font-size: 15rem;
+  }
+
+  .S_ArticleContent {
+    padding: 32rem 24rem 60rem;
+    max-width: 100%;
+  }
+  .A_SubtitleArticle + .A_SubtitleArticle {
+  margin-top: 20rem;
+  }
+
+
+  .A_TitleSection {
+    font-size: 24rem;
+  }
+
+  .A_ContentText {
+    font-size: 15rem;
+  }
+
+  .A_ArticleImg {
+    margin: 24rem 0;
+    max-height: none;
+    border-radius: 12rem;
+  }
+
+  .C_UsefulBlock1 {
+    height: 250rem;
+    padding: 0rem 20rem;
+    margin: 24rem 0;
+    border-radius: 12rem;
+  }
+  .S_RecipesMainScreen,
+  .S_ArticlesMainScreen,
+  .S_GuidesMainScreen,
+  .S_TestsMainScreen {
+    padding: 0rem 20rem;
+  }
+  .M_RecipesCards {
+    height: 242rem;
+  }
+  h4 {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 16rem;
+    line-height: 120%;
+  }
+  .S_MainScreen {
+    padding: 300rem 20rem 40rem 20rem;
+    gap: 24rem;
+  }
+  .button_hero {
+    width: 100%;
+    padding: 10rem 16rem;
+  }
+  .S_HeaderMainScreen {
+    background-color: var(--main-green-color);
+    background-image: url(img/Main.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: 120%;
+  }
+
+  .S_HeaderArticlesScreen {
+    background-image: url(img/Articles.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 20%;
+    background-size: 100%;
+  }
+
+  .S_AboutMainScreen {
+    padding: 40rem 20rem;
+  }
+  .A_TitleSection_About {
+    display: none;
+  }
+  .C_AboutCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0rem;
+    grid-row-gap: 8rem;
+    grid-auto-rows: 145rem;
+  }
+  .O_AboutCardWide {
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: var(--main-pink-color);
+    background-image: url("img/Group%2095.svg");
+    background-size: cover;
+    background-position: 12% 0%;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: 50%;
+    border-radius: 40rem;
+    width: 100%;
+  }
+
+  .O_AboutCardSmall {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40rem;
+    padding: 24rem;
+  }
+  .card-purple {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .W_Text_CardSmall {
+    align-items: flex-start;
+    margin-left: 8rem;
+  }
+  .A_Subtitle__CardSmall {
+    text-align: left;
+  }
+  .card-green {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .O_AboutCardSmall img {
+    width: 100rem;
+    height: 80rem;
+  }
+  .card-orange {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+
+  .A_TitleSection_CardWide {
+    margin: 80rem 0 0 24rem;
+    line-height: 100%;
+    width: 314rem;
+  }
+  h3 {
+    font-size: 32rem;
+  }
+  .A_Subtitle__CardWide {
+    margin-left: 24rem;
+    width: 314rem;
+  }
+
+  p {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 16rem;
+    line-height: 120%;
+    color: var(--text-main-color);
+  }
+  .S_RecipesMainScreen {
+    margin-top: 40rem;
+  }
+  .A_Button_Primary {
+    display: none;
+  }
+  .A_Button_Primary.button_hero,
+  .A_Button_Primary.footer {
+    display: inline-block;
+    width: 100%;
+    padding: 10rem 16rem;
+  }
+  .M_TitleLink {
+    margin-bottom: 20rem;
+  }
+  .O_RecipesCardsM {
+    margin-top: 20rem;
+  }
+  .O_TestBlock {
+    margin: 20rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 24rem;
+    border-radius: 40rem;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .O_TestBlock img,
+  .O_ContactBlock img {
+    width: 300rem;
+  }
+  .W_Text_Test {
+    gap: 8rem;
+  }
+  .O_ContactBlock {
+    margin-top: 40rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 40rem 20rem;
+    flex-direction: column;
+  }
+  .A_Fruits_MainScreen_PatternTomato {
+    display: none;
+  }
+  .A_Form_Input {
+    display: flex;
+    gap: 12rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  input {
+    width: 100%;
+    height: auto;
+    background-color: #fefefe;
+    border: 1rem solid #dadae2;
+    border-radius: 100rem;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 100%;
+    color: #000;
+    padding: 9.5rem 16rem;
+    display: flex;
+    align-items: center;
+  }
+  .S_FooterMain {
+    padding: 0rem 20rem;
+  }
+  .menu.footer {
+    display: none;
+  }
+  .O_Footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    margin-bottom: 50rem;
+  }
+  .M_ArticleCard {
+    height: 273rem;
+  }
+  .M_ArticleCard img {
+    height: 273rem;
+  }
+  .S_HeaderRecepiesScreen {
+    background-color: var(--main-light-green-color);
+    background-image: url(img/Recipes.svg);
+    background-repeat: no-repeat;
+    background-position: 50% -100%;
+    background-size: 100%;
+  }
+
+  .A_NavigationLogo.mobile {
+    display: flex;
+    z-index: 2;
+  }
+  header {
+    margin-top: 20rem;
+    padding-left: 20rem;
+    display: flex;
+    justify-content: flex-start;
+    width: 100vw;
+    align-items: center;
+  }
+  .M_ArticleCard {
+    background-size: 180%;
+  }
+  .A_TagRecipes {
+    font-size: 8rem;
+    padding: 4rem 12rem;
+  }
+  .input-wrapper input {
+    padding-left: 35px;
+    height: 40px;
+    width: 354rem;
+  }
+  .O_RecipesBlock {
+    display: flex;
+    padding: 40rem 20rem 40rem 20rem;
+    flex-direction: column;
+  }
+  .W_TagsSearchWrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .W_TagTitleWrap {
+    display: flex;
+    gap: 20rem;
+    flex-direction: column;
+  }
+  
 }
 
 
